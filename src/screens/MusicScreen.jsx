@@ -8,7 +8,7 @@ const MusicScreen = () => {
             <AboveContainer>
                 <TitleContainer>
                     <Title>Music Player</Title>
-                    <Icon src='icons/musicplayer.png' />
+                    <Icon src='images/icons/musicplayer.png' />
                 </TitleContainer>
                 <AboutContainer>
                     <Heading>About App</Heading>

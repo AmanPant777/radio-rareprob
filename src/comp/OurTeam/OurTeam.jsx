@@ -3,7 +3,7 @@ import { Instagram, Twitter } from '@material-ui/icons'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { firestore } from '../../firebase';
-import OurTeamFlex from '../OurTeamFlex/  OurTeamFlex';
+import OurTeamFlex from '../OurTeamFlex/OurTeamFlex';
 const OurTeam = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -173,7 +173,7 @@ font-size:20px;
 border-radius:40px;
 font-weight: bold;
 transition: transform .2s;
-&:hover{transform: scale(1.1)}; 
+&:hover{transform: scale(1.1)};
 @media(max-width: 768px){
     top: 40%;
     width:5em;

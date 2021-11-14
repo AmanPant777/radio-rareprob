@@ -6,7 +6,7 @@ const VideoScreen = () => {
     return (
         <Container >
             <AboveContainer>
-                <Image src='icons/videoplayer.png' />
+                <Image src='images/icons/videoplayer.png' />
                 <Title>Video Player Pro</Title>
                 <AboutTitle>About App</AboutTitle>
                 <AboutText>

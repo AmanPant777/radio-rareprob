@@ -123,7 +123,7 @@ justify-content: center;
 const Circle=styled.div`
 height:80px;
 width:160px;
-background-image: url(${props=>props.one?'icons/clrg.svg':props.two?'icons/lock.svg':props.three?'icons/color.svg':props.four?'icons/crop.svg':''});
+background-image: url(${props=>props.one?'images/icons/clrg.svg':props.two?'images/icons/lock.svg':props.three?'images/icons/color.svg':props.four?'images/icons/crop.svg':''});
 background-repeat: no-repeat;
 background-size: contain;
 width: ${props=>props.minusspace&&` 120px`};
