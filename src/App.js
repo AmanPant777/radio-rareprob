@@ -6,9 +6,10 @@ function App() {
     <Container>
       <Home/>
     </Container>
-   
   );
 }
+
 export default App;
 const Container=styled.div`
+
 `

@@ -1,45 +1,61 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-const Header = ({home,handleProduct,product}) => {
+const Header = ({ home, handleProduct, product }) => {
+    const [show, setShow] = useState(true)
+    const controlNavbar = () => {
+        if (window.scrollY > 500) {
+            setShow(false)
+        } else {
+            setShow(true)
+        }
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', controlNavbar)
+        return () => {
+            window.removeEventListener('scroll', controlNavbar)
+        }
+    }, [])
+
     return (
-    <Container>
-        <Image src='/icons/logo-01.png'/>
-        <ContainerTitle>
-            <HomeContainer >
-                <a href={`#${home}`}>
-                <Home>Home </Home>
-                </a>
-            </HomeContainer>
-            <AboutContainer>
-                <a href="#about">
-                <About >About</About>
-                </a>
-            </AboutContainer>
-            <ProductContainer onClick={() => handleProduct(!product)}>
-                <Product>Product</Product>
-            </ProductContainer>
-            {/* <IconContainer >
+        <Container read={show}>
+            <Image src='/icons/logo-01.png' />
+            <ContainerTitle>
+                <HomeContainer >
+                    <a href={`#${home}`}>
+                        <Home>Home </Home>
+                    </a>
+                </HomeContainer>
+                <AboutContainer>
+                    <a href="#about">
+                        <About >About</About>
+                    </a>
+                </AboutContainer>
+                <ProductContainer onClick={() => handleProduct(!product)}>
+                    <Product>Product</Product>
+                </ProductContainer>
+                {/* <IconContainer >
                 <Icon one={true}></Icon>
                 <Icon two={true}></Icon>
                 <Icon three={true}></Icon>
             </IconContainer> */}
-        </ContainerTitle>
-    </Container>
+            </ContainerTitle>
+        </Container>
     )
 }
 
 export default Header
-const Container=styled.div`
+const Container = styled.div`
 width: 100%;
-height: 100%;
+height: 90%;
 display: flex;
+background-color: ${props => props.read ? 'rgba(0,0,0,0.01)' : 'rgba(0,0,0,0.5)'};
 justify-content: space-between;
 @media(max-width: 768px){
-    width: 90vw ;
-    height: 70%;
+    width: 100% ;
+    height: 63%;
 }
 `
-const Image=styled.img`
+const Image = styled.img`
 width: 100px;
 height: 70px;
 object-fit: cover;
@@ -48,20 +64,18 @@ object-fit: cover;
     width: 50px;
 }
 `
-const ContainerTitle=styled.div`
+const ContainerTitle = styled.div`
 display: flex;
 justify-content: space-between;
-flex: 0.4;
 align-items: center;
-display: flex;
 @media(max-width: 768px){
     padding: 0;
-    flex: 1;
+    flex: 0.3;
 }
 `
-const HomeContainer=styled.div`
+const HomeContainer = styled.div`
 `
-const Home=styled.div`
+const Home = styled.div`
 color: black;
 background-color:  rgba(255, 255, 255, 0.5);
 border-radius: 50px;
@@ -70,14 +84,25 @@ font-size:20px;
 width: 150px;
 cursor: pointer;
 text-align: center;
+margin: 10px;
+@media(max-width: 1200px){
+    padding: 4px;
+    font-size:17px;
+    width: 130px;
+}
+@media(max-width: 900px){
+    padding: 3px;
+    font-size:13px;
+    width: 100px;
+}
 @media(max-width: 768px){
     padding: 1px;
     font-size:10px;
     width: 60px;
 }
 `
-const AboutContainer=styled.div``
-const About=styled.div`
+const AboutContainer = styled.div``
+const About = styled.div`
 color: black;
 background-color:  rgba(255, 255, 255, 0.5);
 border-radius: 50px;
@@ -85,15 +110,26 @@ padding: 5px;
 font-size:20px;
 cursor: pointer;
 width: 150px;
+margin: 10px;
 text-align: center;
+@media(max-width: 1200px){
+    padding: 4px;
+    font-size:17px;
+    width: 130px;
+}
+@media(max-width: 900px){
+    padding: 3px;
+    font-size:13px;
+    width: 100px;
+}
 @media(max-width: 768px){
     padding: 1px;
     font-size:10px;
     width: 60px;
 }
 `
-const ProductContainer=styled.div``
-const Product=styled.div`
+const ProductContainer = styled.div``
+const Product = styled.div`
 color: black;
 background-color:  rgba(255, 255, 255, 0.5);
 border-radius: 20px  0 0 20px;
@@ -102,6 +138,16 @@ font-size:20px;
 width: 140px;
 text-align: center;
 cursor: pointer;
+@media(max-width: 1200px){
+    padding: 4px;
+    font-size:17px;
+    width: 130px;
+}
+@media(max-width: 900px){
+    padding: 3px;
+    font-size:13px;
+    width: 100px;
+}
 @media(max-width: 768px){
     padding: 1px;
     font-size:10px;

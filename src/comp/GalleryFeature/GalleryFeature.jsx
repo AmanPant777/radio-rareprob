@@ -71,9 +71,9 @@ export default GalleryFeature
 
 const Container=styled.div`
 width: 75%;
-margin-left: 9%;
+margin-left: 7%;
 @media (max-width:768px){
-    width: 70%;
+    width: 80%;
     margin-left: 5%;
 }
 `
@@ -101,7 +101,7 @@ line-height:1.2;
 const GridContainer=styled.div`
 display: grid;
 grid-template-columns: repeat(2,minmax(0,1fr));
-width: 80%;
+width: 100%;
 @media (max-width: 768px) {
     width: 100%;
     height:fit-content;
@@ -150,14 +150,21 @@ const Image=styled.img`
 width: 60%;
 margin: auto;
 object-fit: contain;
-margin-left: 15%;
-height:500px;
-@media(max-width: 768px){
+margin-left: 20%;
+height:600px;
+@media(max-width: 1200px){
     width: 100%;
     margin-left: 0;
     object-fit:contain;
-   height: 200px;
-   object-fit: cover;
+   height: 500px;
+   object-fit: contain;
+}
+@media(max-width:768px){
+    height: 300px;
+    margin-top: 40px;
+}
+@media(max-width:468px){
+    height: 200px;
 }
 `
 const OurTeamContainer=styled.div`

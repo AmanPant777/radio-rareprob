@@ -1,82 +1,97 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Scrollspy from 'react-scrollspy'
 const SideView = () => {
 
-    return (<>
-        <Container>
-            <IconContainer>
-            <Scrollspy items={ ['section-1', 'section-2', 'section-3'] } currentClassName="is-current" offset={-50}>
-    <li>
-      <ActiveLink href="#section-1" >
-                <Icon src="icons/videoplayer.png" />   
-                </ActiveLink>
-                <Title>Video Player Pro</Title>
-      </li>
-    <li>
-      <ActiveLink  href="#section-2" >
-                <Icon src="icons/musicplayer.png" />
-                 
-                </ActiveLink>
-                <Title>Music Player</Title>
-              
-      </li>
-    <li>
-      <ActiveLink href="#section-3">
-               <Icon src="icons/gallery.png" big={true} />
-                 
-               </ActiveLink>
-               <Title>Gallery</Title>
-      </li>
-              </Scrollspy>              
-              <ActiveLink >
-              <Icon src="icons/mp3.png" calculator={true}/>
-                <Title>Video to MP3 Converter</Title>
-              </ActiveLink>
-              <ActiveLink >
-              <Icon src="icons/calculator.png" calculator={true}/>
-                <Title>Claculator</Title>
-              </ActiveLink> 
-              <ActiveLink >
-              <Icon src="icons/insta_new_icon.png" calculator={true}/>
-                <Title>Instagram</Title>
-              </ActiveLink>   
-              <ActiveLink >
-              <Icon src="icons/radio.png" calculator={true}/>
-                <Title>Radio</Title>
-              </ActiveLink>   
-              <ActiveLink >
-              <Icon src="icons/status_saver.png" calculator={true}/>
-                <Title>Status</Title>
-              </ActiveLink>  
-              <ActiveLink >
-              <Icon src="icons/game.png" calculator={true}/>
-                <Title>Game</Title>
-              </ActiveLink>  
-              <ActiveLink >
-              <Icon src="icons/share.png" calculator={true}/>
-                <Title>Share</Title>
-              </ActiveLink> 
-            </IconContainer>
-        </Container>
-        <Jump width="64" src="icons/arrow7.png" alt="" />
-        </>
-    )
+  const [show, setShow] = useState(true)
+  const controlNavbar = () => {
+    if (window.scrollY > 500) {
+      setShow(false)
+    } else {
+      setShow(true)
+    }
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', controlNavbar)
+    return () => {
+      window.removeEventListener('scroll', controlNavbar)
+    }
+  }, [])
+
+
+  return (<>
+    <Container show={show}>
+      <IconContainer>
+        <Scrollspy items={['section-1', 'section-2', 'section-3']} currentClassName="is-current" offset={-50}>
+          <li>
+            <ActiveLink href="#section-1" >
+              <Icon src="icons/videoplayer.png" />
+              <Title>Video Player Pro</Title>
+            </ActiveLink>
+
+          </li>
+          <li>
+            <ActiveLink href="#section-2" >
+              <Icon src="icons/musicplayer.png" />
+              <Title>Music Player</Title>
+            </ActiveLink>
+
+          </li>
+          <li>
+            <ActiveLink href="#section-3">
+              <Icon src="icons/gallery.png" big={true} />
+              <Title>Gallery</Title>
+            </ActiveLink>
+          </li>
+        </Scrollspy>
+        <ActiveLink href="https://play.google.com/store/apps/details?id=mp3converter.videotomp3.ringtonemaker">
+          <Icon src="icons/mp3.png" />
+          <Title>Video to MP3 Converter</Title>
+
+        </ActiveLink>
+        <ActiveLink href="https://play.google.com/store/apps/details?id=com.asd.emicalculator">
+          <Icon src="icons/calculator.png" calculator={true} />
+          <Title>Claculator App</Title>
+        </ActiveLink>
+        <ActiveLink href="https://play.google.com/store/apps/details?id=instagram.video.downloader.story.saver.instasaver">
+          <Icon src="icons/insta_new_icon.png" />
+          <Title>Video Downloader</Title>
+        </ActiveLink>
+        <ActiveLink href="https://play.google.com/store/apps/details?id=radio.fm.mytunner.gaana.liveradio.radiostation.pocketfm">
+          <Icon src="icons/radio.png" />
+          <Title>Radio Fm</Title>
+        </ActiveLink>
+        <ActiveLink href="https://play.google.com/store/apps/details?id=com.asddev.statussaver">
+          <Icon src="icons/status_saver.png" />
+          <Title>Status Saver</Title>
+        </ActiveLink>
+        <ActiveLink href="https://play.google.com/store/apps/details?id=games.find.diff.gamma">
+          <Icon src="icons/game.png" />
+          <Title>Game</Title>
+        </ActiveLink>
+        <ActiveLink href="https://play.google.com/store/apps/details?id=shareit.sharefiles.filetransfer.easyshare.copydata">
+          <Icon src="icons/share.png" />
+          <Title>ShareOn</Title>
+        </ActiveLink>
+      </IconContainer>
+    </Container>
+    <Jump src="icons/arrow7.png" alt="" />
+  </>
+  )
 }
 
 export default SideView
 
-const Container=styled.div`
+const Container = styled.div`
 color: black;
 height:80vh;
 border-radius: 40px 0 0 40px;
 margin-top:70px;
-
 scroll-behavior:smooth;
 overflow-y: scroll;
 -ms-overflow-style: none;  
 scrollbar-width: none;  
-background-color: rgba(255,255,255,0.4);
+background-color: ${props => props.show ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.2)'};
 width: 100%;
 /* ::-webkit-scrollbar{
   width: 6px;
@@ -93,7 +108,7 @@ width: 100%;
 ::-webkit-scrollbar{
   width: 0;
 }
-::-webkit-scrollbar-track{
+/* ::-webkit-scrollbar-track{
     background-color: rgba(236, 226, 226,0.3);
     border-radius: 5px;
 }
@@ -103,51 +118,79 @@ width: 100%;
 }
 ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(transparent, #e00e0e);
-}
+} */
 
 @media(max-width: 768px){
-  margin-top: 50%;
-  margin-right: 5%;
+  margin-top: 100%;
 }
 `
-const IconContainer=styled.div`
+const IconContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-
 `
-const Title=styled.div`
+const Title = styled.div`
 text-align: center;
-padding: 10px;
-font-size:11px;
+padding: 0px;
+width: 100%;
+font-size:12px;
+position: absolute;
+right: -28px;
+@media(max-width:1200px){
+  position: relative;
+  right: 0;
+  margin-top: 5px;
+}
 @media(max-width: 768px){
   font-size: 10px;
 }
-`
-const Icon=styled.img`
-width:40px;
-width: ${props=>props.calculator&&'40px'};
-width: ${props=>props.big&&'40px'};
-cursor: pointer;
-@media(max-width: 768px){
-  width: 30px;
+@media(max-width: 568px){
+  display: none;
 }
 `
-const ActiveLink=styled.a`
+const Icon = styled.img`
+width:40px;
+margin-left: -30px;
+width: ${props => props.calculator && '50px'};
+width: ${props => props.big && '40px'};
+cursor: pointer;
+transition: transform .2s;
+&:hover{transform: scale(1.3)}; 
+@media(max-width: 768px){
+  width: 20px;
+}
+@media(max-width:1200px){
+  margin-left: 0;
+  width: 25px;
+}
+`
+const ActiveLink = styled.a`
 text-decoration: none;
 color: black;
-flex-direction: column;
+flex-direction: row;
 display: flex;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
-border-bottom: ${props=>props.videoHighlight&&'4px solid red'};
+position: relative;
+border-bottom: ${props => props.videoHighlight && '4px solid red'};
 padding: 5px;
+margin-top: 30px;
+@media(max-width:1200px){
+  flex-direction: column;
+}
+@media(max-width:7680px){
+margin-top  :10px ;
+}
 `
-const Jump=styled.img`
+const Jump = styled.img`
 width: 38px;
 margin-left: 35%;
 margin-top: 10%;
 transform-origin: 50% 50%;
 animation: jump .9s linear alternate infinite;
+@media(max-width:780px){
+  width: 23px;
+  margin-left: 30%;
+}
 `
