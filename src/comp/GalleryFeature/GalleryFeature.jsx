@@ -153,9 +153,9 @@ line-height:1.2;
 }
 @media(max-width: 468px){
     padding: 0;
-    font-size: 8px;
+    font-size: 9px;
     width: 50%;
-line-height:1.2;
+line-height:1.4;
 margin-top: 20px;
 }
 `     
@@ -205,17 +205,16 @@ margin-top: 40px;
 const Image1=styled.img`
 max-width: 220px;
 @media (max-width: 768px){
-    width: 120px;
+    width: 150px;
     margin-left: -5%;
 }
 @media (max-width: 1200px){
-    width: 150px;
+    width: 180px;
     margin-top: 40px;
 }
 @media (max-width: 568px){
-    width: 70px;
+    width: 120px;
     margin-top: 20px;
     margin-left: -20%;
-
 }
 `

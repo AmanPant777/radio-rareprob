@@ -93,6 +93,12 @@ padding: 0px;
 margin-right: 30px;
 margin-top: 20px;
 }
+@media(max-width: 488px){
+    font-size: 20px;
+padding: 0px;
+margin-right: 0;
+margin-top: 20px;
+}
 `
 const OurTeamText = styled.p`
 font-size:18px;
@@ -207,8 +213,8 @@ width: 60%;
 margin-top:40px;
 margin-left: 17%;
 @media(max-width:768px){
-    margin-top: 0;
-    margin-left: 11%;
+    margin-top: -40px;
+    margin-left: 13%;
 }
 `
 const FeedbackContainer = styled.div`

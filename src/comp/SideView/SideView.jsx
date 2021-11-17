@@ -126,6 +126,11 @@ width: 100%;
 @media(min-height:700px){
 margin-top:90px;
 }
+@media(max-width:488px){
+margin-top:60px;
+border-radius: 20px 0 0 20px;
+
+}
 `
 const IconContainer = styled.div`
 display: flex;
@@ -167,9 +172,9 @@ transition: transform .2s;
   margin-left: 0;
   width: 25px;
 }
-@media(max-width:1200px){
-  position: relative;
+@media(max-width:488px){
   right: 0;
+  width: 20px;
   margin-top: 5px;
 }
 `

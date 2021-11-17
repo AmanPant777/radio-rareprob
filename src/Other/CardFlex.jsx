@@ -40,7 +40,6 @@ const styles = muiBaseTheme => ({
     padding: muiBaseTheme.spacing.unit * 3,
     "@media (max-width: 768px)": {
       padding: muiBaseTheme.spacing.unit * 1,
-
     },
   },
   divider: {
@@ -48,10 +47,15 @@ const styles = muiBaseTheme => ({
   },
   heading: {
     fontWeight: "bold",
-
+   
   },
   subheading: {
-    lineHeight: 1.8
+    lineHeight: 1.8,
+    "@media (max-width: 488px)": {
+      lineHeight:1.2,
+      fontSize:5
+
+    },
   },
 
 });

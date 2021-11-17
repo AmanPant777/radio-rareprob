@@ -100,6 +100,7 @@ margin-top: 20px;
 }
 @media(max-width:468px){
    margin-top: 10px;
+   margin-left: 10px;
 }
  `
 // const GridContainer1 = styled.div`
@@ -158,6 +159,11 @@ scrollbar-width: none;
     height: fit-content;
     min-height: 200px;
 }
+@media(max-width:488px){
+    width: 60%;
+    min-height: 200px;
+    margin: 20px 0;
+}
 `
 const Flex1 = styled.div`
 width: 100%;
@@ -203,6 +209,7 @@ margin-top: 50px;
 @media(max-width:768px){
     margin-left: -30px;
 }
+
 `
 const Textbelow = styled.p`
 color: gray;
