@@ -61,6 +61,9 @@ const GalleryFeature = () => {
           <Zoom>
           <Image src="images/artboard.png"/>
           </Zoom>
+         <Link href="https://play.google.com/store/apps/details?id=com.rocks.photosgallery">
+            <Image1 src="icons/google.png"/>
+         </Link>
           <OurTeamContainer >
             <OurTeam/>
           </OurTeamContainer>
@@ -71,9 +74,9 @@ export default GalleryFeature
 
 const Container=styled.div`
 width: 75%;
-margin-left: 9%;
+margin-left: 7%;
 @media (max-width:768px){
-    width: 70%;
+    width: 80%;
     margin-left: 5%;
 }
 `
@@ -101,7 +104,7 @@ line-height:1.2;
 const GridContainer=styled.div`
 display: grid;
 grid-template-columns: repeat(2,minmax(0,1fr));
-width: 80%;
+width: 100%;
 @media (max-width: 768px) {
     width: 100%;
     height:fit-content;
@@ -136,7 +139,7 @@ width: ${props=>props.minusspace&&` 120px`};
 }
 `
 const CircleText=styled.p`
-color: gray;
+color: rgba(0,0,0,0.9);
 line-height:1.5;
 @media(max-width: 768px){
     padding: 0;
@@ -145,27 +148,68 @@ line-height:1.5;
 line-height:1.2;
 
 }
+@media(max-width: 468px){
+    padding: 0;
+    font-size: 8px;
+    width: 50%;
+line-height:1.2;
+margin-top: 20px;
+}
 `     
 const Image=styled.img`
 width: 60%;
 margin: auto;
 object-fit: contain;
-margin-left: 15%;
-height:500px;
-@media(max-width: 768px){
+margin-left: 20%;
+height:600px;
+@media(max-width: 1200px){
     width: 100%;
     margin-left: 0;
     object-fit:contain;
-   height: 200px;
-   object-fit: cover;
+   height: 500px;
+   object-fit: contain;
+}
+@media(max-width:768px){
+    height: 300px;
+    margin-top: 40px;
+}
+@media(max-width:468px){
+    height: 200px;
 }
 `
 const OurTeamContainer=styled.div`
-width: 100%;
+width: 98vw;
 height: 100%;
+margin-left: -15%;
 margin-top: 50px;
+border-radius: 40px;
+background-color:#e9d6d616;
 @media (max-width: 768px) {
-    margin-left: 0;
+    margin-left: -30px;
 margin-top: 0px;
+}
+`
+const Link=styled.a`
+cursor: pointer;
+display: inline-block;
+max-width: 200px;
+margin-left: 40%;
+margin-top: 40px;
+@media(max-width:768px){
+   margin-top: 0;
+}
+`
+const Image1=styled.img`
+max-width: 220px;
+@media (max-width: 768px){
+    width: 100px;
+    margin-left: 0;
+}
+@media (max-width: 1200px){
+    width: 100px;
+}
+@media (max-width: 568px){
+    width: 90px;
+    margin-left: -20px;
 }
 `

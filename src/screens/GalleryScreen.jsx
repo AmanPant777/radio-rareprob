@@ -24,6 +24,7 @@ const GalleryScreen = () => {
 export default GalleryScreen
 
 const Container=styled.div`
+margin-top: -50px;
 @media(max-width: 768px){
     width: 100vw;
     margin-top: -50px;
@@ -32,15 +33,14 @@ const Container=styled.div`
 const VideoContainer=styled.div`
 width: 100%;
 height: 100%;
-margin-top:-55px;
 position: relative;
 @media(max-width: 768px){
     height: 200px;
 }
 `
 const Video=styled.video`
-width: 99%;
-height: 500px;
+width: 100%;
+height: 550px;
 object-fit: cover;
 margin-left: 0.3%;
 @media(max-width: 768px){
@@ -64,14 +64,15 @@ color: white;
 `
 const IconContainer=styled.div`
 position: absolute;
-top: 15%;
-left: 35%;
+top: 28%;
+left: 40%;
+
 display: flex;
 flex-direction: column;
 align-items: center;
 @media(max-width: 768px){
     top: 30%;
-    left: 30%;
+    left: 40%;
 }
 `
 const FeatureContainer=styled.div`
