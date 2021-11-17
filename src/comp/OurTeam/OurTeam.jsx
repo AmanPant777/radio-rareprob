@@ -203,7 +203,7 @@ const ImageContainer = styled.div`
 }
 `
 const ImageFeedback = styled.img`
-width: 70%;
+width: 60%;
 margin-top:40px;
 margin-left: 17%;
 @media(max-width:768px){

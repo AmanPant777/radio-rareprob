@@ -34,8 +34,8 @@ const VideoScreen = () => {
                     <PictureImage src='/images/pop.png' />
                 </PictureContainer>
                 <PictureContainer>
-                    <PictureTitle>Online Entertainment</PictureTitle>
-                    <PictureText>Now enjoy offline and online entertainement in a Single App</PictureText>
+                    <PictureTitle>Online Videos</PictureTitle>
+                    <PictureText>Search and play online trending videos with category like music, sports, news, comedy, technology and many more</PictureText>
                     <PictureImage src='/images/online.png' />
                 </PictureContainer>
             </PictureInPictureContainer>
@@ -90,10 +90,13 @@ color: red;
 padding: 20px;
 font-weight: bold;
 @media(max-width: 768px){
-    font-size:20px;
+    font-size:30px;
     padding: 10px;
 }
-
+@media(max-width: 488px){
+    font-size:25px;
+    padding: 5px 10px;
+}
 `
 const AboutTitle = styled.h2`
 font-size: 25px;

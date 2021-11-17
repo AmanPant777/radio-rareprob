@@ -142,7 +142,7 @@ width: ${props=>props.minusspace&&` 120px`};
 }
 `
 const CircleText=styled.p`
-color: rgba(0,0,0,0.9);
+color: black;
 line-height:1.5;
 @media(max-width: 768px){
     padding: 0;

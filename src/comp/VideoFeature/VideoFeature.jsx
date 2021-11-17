@@ -5,7 +5,7 @@ const VideoFeature = () => {
     return (
         <Container>
             <FeatureContainer>
-                 <FeatureTitle>Multiple features in a Single App</FeatureTitle>
+                 <FeatureTitle>Multi-featured App</FeatureTitle>
                  <FeatureText>Music, Photos, Videos and Online Trending videos are accessible.</FeatureText>
                  <ImageContainer>
                      <Image src="images/picture.png"/>
@@ -33,7 +33,9 @@ margin-top: 60px;
 }
 `
 const FeatureContainer=styled.div`
-
+@media(max-width:488px){
+    margin-left: 20px;
+}
 `
 const FeatureTitle=styled.div`
 text-align: center;

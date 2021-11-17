@@ -4,7 +4,7 @@ import Footer from '../Footer'
 const GridFeatures = () => {
     return (
         <Container>
-            <Title>Specialities</Title>
+            <Title>Basic Aspects</Title>
             <GridContainer>
                 <Grid >
                     <ImageContainer one={true}></ImageContainer>
@@ -143,7 +143,7 @@ max-width: 200px;
 margin-top: 40px;
 margin-left: -15px;
 @media(max-width:768px){
-   margin-top: 0;
+   margin-top: 20px;
    margin-bottom: 40px;
    margin-left: 17px;
 }
@@ -159,6 +159,7 @@ max-width: 220px;
 }
 @media (max-width: 568px){
     width: 120px;
+    
 }
 `
 const LinkContainer=styled.div`

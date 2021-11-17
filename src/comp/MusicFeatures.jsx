@@ -97,11 +97,18 @@ grid-template-columns: repeat(3,minmax(0,1fr));
 margin-top: 0px;
 
 }
+@media (max-width: 488px) {
+grid-template-columns: repeat(2,minmax(0,1fr));
+margin-top: 0px;
+}
 `
 const Grid = styled.div`
 height: 650px;
 margin-top:50px;
-
+@media(max-width:1200px){
+    height: 700px;
+    margin-top: 100px;
+}
 @media (max-width: 768px) {
     height: fit-content;
     width: 100%;
@@ -117,6 +124,7 @@ font-weight: bold;
 padding: 20px 0;
 text-align: center;
 margin-left: -10%;
+font-size: 20px;
 @media (max-width: 768px){
     font-size:13px;
     padding: 0 5px;
@@ -139,9 +147,10 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 transition: transform .2s;
 &:hover{transform: scale(1.1)}; 
 @media(max-width: 768px){
-    width: 90%;
-    height: 130px;
+    width: 70%;
+    height: 160px;
 border-radius: 4px;
+margin-left: 5%;
 }
 @media(max-width: 555px){
     width: 80%;
@@ -160,13 +169,15 @@ margin-top: 30px;
 @media(max-width: 768px){ 
     font-size:9px;
     line-height:1.3;
-    width: 90%;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 5%;
 }
-@media(max-width: 768px){ 
-    font-size:9px;
+@media(max-width: 488px){ 
+    font-size:10px;
     line-height:1.3;
     width: 90%;
-    margin-top: 8px;
+    margin-top: 20px;
 }
 `
 const Icon = styled.img`
@@ -181,7 +192,7 @@ position: absolute;
 @media (max-width: 768px) {
     width: 25px;
     top: 20%;
-    left: 40%;
+    left: 35%;
     max-width: ${props=>props.discover&&`
     20px
 `};
@@ -218,22 +229,22 @@ max-width: 200px;
 margin-left: 47%;
 margin-top: 50px;
 @media(max-width:768px){
-   margin-top: 0;
+   margin-top: 10px;
 }
 `
 const Image1=styled.img`
 max-width: 220px;
 margin-top: 40px;
 @media (max-width: 768px){
-    width: 120px;
+    width: 150px;
     margin-left: -20%;
 }
 @media (max-width: 1200px){
-    width: 150px;
+    width: 180px;
     margin-top: 40px;
 }
 @media (max-width: 568px){
-    width: 70px;
+    width: 120px;
     margin-top: 20px;
 }
 `

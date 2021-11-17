@@ -12,9 +12,9 @@ const MusicScreen = () => {
                 </TitleContainer>
                 <AboutContainer>
                     <Heading>About App</Heading>
-                    <Text>Browse and play your music by albums, artists, genres, songs, playlists, <br /> folders and albums artists.</Text>
-                    <Text nomargintop={true}>Music Player lets you manage all your audio files and play the music file quickly and easily. <br /> You may easily browse and play music songs and create your playlists.</Text>
-                    <Text nomargintop={true}>Audio Player for all types of Audio Formats Music Player supports all music <br />and audio formats including <strong>MP3, MIDI, WAV, FLAC, AAC, APE </strong>  etc</Text>
+                    <Text heading={true}>Browse and play your music by albums, artists, genres, songs, playlists, <br /> folders and albums artists.</Text>
+                    <Text nomargintop={true} heading={true}>Music Player lets you manage all your audio files and play the music file quickly and easily. <br /> You may easily browse and play music songs and create your playlists.</Text>
+                    <Text nomargintop={true} heading={true}>Audio Player for all types of Audio Formats Music Player supports all music <br />and audio formats including <br /> <strong>MP3, MIDI, WAV, FLAC, AAC, APE </strong>  etc</Text>
                     <Heading>Features</Heading>
                     <br />
                     <br />
@@ -78,12 +78,15 @@ align-items: center;
 justify-content: flex-start;
 `
 const Title = styled.div`
-font-size:50px;
+font-size:40px;
 color: #D51989;
 font-weight: bold;
 margin-left: 10px;
 @media(max-width: 768px){
-    font-size:20px;
+    font-size:30px;
+}
+@media(max-width:488px){
+    font-size: 25px;
 }
 `
 const Icon = styled.img`
@@ -105,30 +108,30 @@ padding: 1px;
 `
 const Heading = styled.div`
 padding: 10px;
-font-size:20px;
+font-size:25px;
 font-weight:bold;
 color: #D51989;
 margin-top: 20px;
 @media(max-width: 768px){
     padding: 0 10px;
-    font-size: 12px;
+    font-size: 20px;
     margin-top: 10px;
 }
 `
 const Text = styled.p`
-margin-top: ${props => props.nomargintop ? '0' : '20px'};
-margin-top: ${props => props.zeromargin && '-20px'};
+margin-top: ${props => props.nomargintop ? '10px' : '10px'};
+margin-top: ${props => props.zeromargin ?'-10px':'0'};
 padding: 10px;
 line-height:1.6;
 color: rgba(0,0,0,1);
-font-size: 15px;
+font-size: ${props=>props.heading?'20px':'17px'};
+
 @media(max-width: 768px){
-font-size: 9px;
-margin-top: ${props => props.nomargintop ? '0' : '10px'};
+font-size: ${props=>props.heading?'15px':'10px'};
+margin-top: ${props => props.nomargintop ? '10px' : '10px'};
 padding: 0 10px;
 line-height:1.5;
-margin-top: ${props => props.zeromargin && '-1px'};
-
+margin-top: ${props => props.zeromargin && '5px'};
 }
 `
 const GridContainer = styled.div`
