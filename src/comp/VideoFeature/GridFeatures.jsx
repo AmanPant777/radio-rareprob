@@ -37,9 +37,12 @@ const GridFeatures = () => {
                     <ImageText>Dual Audio, subtitle search, PIP mode in video player playback speed, easy control on volume and brightness etc.</ImageText>
                 </Grid>
             </GridContainer>
-            <Link href="https://play.google.com/store/apps/details?id=com.rocks.music.videoplayer">
-            <Image src='icons/google.png'/>
+            <LinkContainer>
+                <Link href="https://play.google.com/store/apps/details?id=com.rocks.music.videoplayer">
+                <Image src='icons/google.png'/>
             </Link>
+            </LinkContainer>
+            
             <div style={{ height: '100px' }}>
 
             </div>
@@ -130,7 +133,6 @@ const Link=styled.a`
 cursor: pointer;
 display: inline-block;
 max-width: 200px;
-margin-left: 38%;
 margin-top: 40px;
 @media(max-width:768px){
    margin-top: 0;
@@ -147,6 +149,12 @@ max-width: 220px;
     width: 150px;
 }
 @media (max-width: 568px){
-    width: 70px;
+    width: 100px;
 }
+`
+const LinkContainer=styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 `

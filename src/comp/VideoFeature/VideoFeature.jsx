@@ -6,7 +6,7 @@ const VideoFeature = () => {
         <Container>
             <FeatureContainer>
                  <FeatureTitle>All Features in Single App</FeatureTitle>
-                 <FeatureText>Music,Photos,Videos and Online Tranding videos in Single App.</FeatureText>
+                 <FeatureText>Music, Photos, Videos and Online Tranding videos in Single App.</FeatureText>
                  <ImageContainer>
                      <Image src="images/picture.png"/>
                  {/* <FeatureImage src='/images/mobile1.png' middle={true}/>
@@ -34,7 +34,7 @@ const FeatureContainer=styled.div`
 const FeatureTitle=styled.div`
 text-align: center;
 font-size:40px;
-color: rgba(0,0,0,0.7);
+color: rgba(0,0,0,0.8);
 font-weight:bold;
 padding:20px;
 @media(max-width: 768px){
@@ -45,7 +45,7 @@ padding:20px;
 const FeatureText=styled.div`
 text-align: center;
 font-size:20px;
-color: rgba(0,0,0,0.7);
+color: rgba(0,0,0,0.9);
 
 @media(max-width: 768px){
     font-size:11px;

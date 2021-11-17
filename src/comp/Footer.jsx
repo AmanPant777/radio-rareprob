@@ -14,12 +14,12 @@ const Footer = ({ color, text, icon, read }) => {
                         <Link href="https://play.google.com/store/apps/dev?id=6259831402052261779">
                             <Icon src='/icons/google.png' />
                         </Link>
-                        <ReadMoreContainer href="#section-1">
+                        {/* <ReadMoreContainer href="#section-1">
                             <ReadMore read>read more</ReadMore>
                             <ArrowContainer >
                                 <ArrowDownwardStyle style={{ color: color && 'black' }} />
                             </ArrowContainer>
-                        </ReadMoreContainer>
+                        </ReadMoreContainer> */}
                     </IconContainer>)
                 }
 
@@ -54,36 +54,33 @@ margin-left: 4%;
 `
 
 const IconContainer = styled.div`
-display: flex;
-align-items: center;
-justify-content: space-around;
+
 width: 96%;
-margin-left:auto;
 margin-top: 50px;
 @media(max-width:1200px){
 margin-top:35px ;
 }
 @media(max-width:788px){
-margin-top:12px ;
+margin-top:0px ;
 }
-@media(max-width:568px){
-margin-top:20px ;
+@media(max-width:608px){
+margin-top:-10px ;
 }
-@media(max-width:400px){
-margin-top:5px ;
+@media(max-width:490px){
+margin-top:10px ;
 }
 `
 const Icon = styled.img`
 width: 240px;
 object-fit: contain;
 @media (max-width: 768px){
-    width: 100px;
-}
-@media (max-width: 1200px){
     width: 120px;
 }
+@media (max-width: 1200px){
+    width: 150px;
+}
 @media (max-width: 568px){
-    width: 80px;
+    width: 90px;
 }
 `
 const ReadMoreContainer = styled.a`

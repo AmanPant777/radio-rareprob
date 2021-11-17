@@ -6,8 +6,11 @@ const VideoScreen = () => {
     return (
         <Container >
             <AboveContainer>
+                <HeadingContainer>
                 <Image src='icons/videoplayer.png' />
                 <Title>Video Player Pro</Title>
+                </HeadingContainer>
+               
                 <AboutTitle>About  App</AboutTitle>
                 <AboutText>
                     Rocks Player Ultra HD Video Player is Simple and Fast video player
@@ -19,8 +22,11 @@ const VideoScreen = () => {
                     movies.
                 </AboutText>
                 <KeyTitle>Key Features</KeyTitle>
+                <HeadingContainer two={true}>
                 <KeyGrayTitle>Smooth Gesture</KeyGrayTitle>
                 <Text>Gesture control for Volume, Brightness, Playback speed and Forward</Text>
+                </HeadingContainer>
+                
             </AboveContainer>
             <Video autoPlay="autoPlay" playsinline autoplay muted loop >
                 <source src={kid} type="video/mp4" />
@@ -57,10 +63,10 @@ background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
 const AboveContainer = styled.div`
 width: 75%;
 margin: auto;
-display: flex;
+/* display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+align-items: center; */
 margin-left: 10%;
 padding-top: 40px;
 /* top: 40px; */
@@ -77,6 +83,10 @@ width: 100px;
     width: 70px;
     margin-top:-10px;
 }
+@media(max-width: 468px){
+    width: 60px;
+    margin-top:-10px;
+}
 `
 const Title = styled.div`
 font-size:40px;
@@ -87,21 +97,23 @@ font-weight: bold;
     font-size:20px;
     padding: 10px;
 }
+
 `
 const AboutTitle = styled.h2`
 font-size: 25px;
 margin-top: 30px;
 color: red;
-word-spacing: 10px;
+word-spacing: 5px;
 font-weight: 900;
 @media(max-width: 768px){
     font-size:15px;
 }
 `
 const AboutText = styled.div`
-text-align: center;
+text-align: left;
 line-height:1.7;
 margin-top: 30px;
+color: black;
 @media(max-width: 768px){
 font-size:12px;
 }
@@ -113,7 +125,7 @@ font-size:30px;
 font-weight: 900;
 word-spacing: 5px;
 @media(max-width: 768px){
-    margin-top:2%;
+    margin-top:30px;
     font-size: 20px;
 }
 `
@@ -122,7 +134,7 @@ margin-top:30px;
 font-size:20px;
 width: 40%;
 text-align: center;
-color: rgba(0,0,0,0.8);
+color: rgba(0,0,0,0.9);
 
 @media(max-width: 768px){
     margin-top:13px;
@@ -136,7 +148,7 @@ const KeyGrayTitle = styled.div`
 margin-top: 30px;
 font-size: 30px;
 font-weight: bold;
-color: rgba(0,0,0,0.7);
+color: rgba(0,0,0,0.8);
 @media(max-width: 768px){
     margin-top:2%;
     font-size: 15px;
@@ -147,6 +159,7 @@ width: 70%;
 display: flex;
 /* margin-left: 5%; */
 margin: auto;
+margin-top: 100px;
 justify-content:space-between;
 @media(max-width: 768px){
     margin-top:10px;
@@ -168,7 +181,7 @@ font-weight: bold;
 font-size:30px;
 text-align: center;
 padding: 20px;
-color: rgba(0,0,0,0.7);
+color: rgba(0,0,0,0.8);
 @media(max-width: 768px){
     font-size:15px;
     padding:5px;
@@ -176,7 +189,7 @@ color: rgba(0,0,0,0.7);
 `
 const PictureText = styled.div`
 font-size: 15px;
-color: rgba(0,0,0,0.7);
+color: rgba(0,0,0,0.9);
 
 text-align: center;
 @media(max-width: 768px){
@@ -211,4 +224,11 @@ margin-right: auto;
    margin-left: 16%;
    border-radius:30px;
 }
+`
+const HeadingContainer=styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: ${props=>props.two&&`40px`};
 `
