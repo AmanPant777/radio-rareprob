@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import VideoFeature from '../comp/VideoFeature/VideoFeature'
-import kid from './kids.mp4'
 const VideoScreen = () => {
     return (
         <Container >
@@ -235,24 +234,24 @@ margin-left: 10%;
     margin-left: 2%;
 }
 `
-const Video = styled.video`
-width: 40%;
-margin-left: 28%;
-margin-top: 40px;
-border-radius: 30px;
-margin-right: auto;
-@media(max-width: 768px){
-   width: 50%;
-   margin-left: 20%;
-   border-radius:20px;
-}
-@media(max-width: 498px){
-   width: 48%;
-   margin-left: 21%;
-   margin-top: 5px;
-   border-radius:20px;
-}
-`
+// const Video = styled.video`
+// width: 40%;
+// margin-left: 28%;
+// margin-top: 40px;
+// border-radius: 30px;
+// margin-right: auto;
+// @media(max-width: 768px){
+//    width: 50%;
+//    margin-left: 20%;
+//    border-radius:20px;
+// }
+// @media(max-width: 498px){
+//    width: 48%;
+//    margin-left: 21%;
+//    margin-top: 5px;
+//    border-radius:20px;
+// }
+// `
 const HeadingContainer=styled.div`
 display: flex;
 flex-direction: column;

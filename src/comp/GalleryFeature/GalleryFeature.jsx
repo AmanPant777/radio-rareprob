@@ -35,7 +35,7 @@ const GalleryFeature = () => {
                   </CircleContainer>
               </Grid>
               <Grid> 
-                  <CircleContainer>
+                  <CircleContainer bigscreen={true}>
                       <Circle three={true} minusspace={true}>
                       </Circle>
                       <CircleText>
@@ -125,6 +125,9 @@ const CircleContainer=styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
+@media(max-width:1600px ){
+   margin-right: ${props=>props.bigscreen&&` 30px`};
+}
 `
 const Circle=styled.div`
 height:80px;

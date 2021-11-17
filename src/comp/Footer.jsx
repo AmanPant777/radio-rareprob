@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ArrowDownward } from '@material-ui/icons';
+// import { ArrowDownward } from '@material-ui/icons';
 import Zoom from 'react-reveal/Zoom'
-const Footer = ({ color, text, icon, read }) => {
+const Footer = ({  text, icon, }) => {
     return (
         <Zoom>
             <Container>
@@ -83,42 +83,43 @@ object-fit: contain;
     width: 90px;
 }
 `
-const ReadMoreContainer = styled.a`
-color: white;
-flex: 1;
-display: flex;
-flex-direction: column;
-justify-content:center;
-align-items: center;
-margin-left:-20%;
-cursor: pointer;
-`
-const ReadMore = styled.div`
-color: ${props => props.color && 'black'};
-color: ${props => props.read ? 'white' : 'black'};
+// const ReadMoreContainer = styled.a`
+// color: white;
+// flex: 1;
+// display: flex;
+// flex-direction: column;
+// justify-content:center;
+// align-items: center;
+// margin-left:-20%;
+// cursor: pointer;
+// `
 
-@media (max-width: 1200px){
-    font-size:15px;
-}
-@media (max-width: 980px){
-    font-size:13px;
-}
-@media (max-width: 768px){
-    font-size:10px;
-}
-@media (max-width: 568px){
-    font-size:8px;
-}
-`
+// const ReadMore = styled.div`
+// color: ${props => props.color && 'black'};
+// color: ${props => props.read ? 'white' : 'black'};
+
+// @media (max-width: 1200px){
+//     font-size:15px;
+// }
+// @media (max-width: 980px){
+//     font-size:13px;
+// }
+// @media (max-width: 768px){
+//     font-size:10px;
+// }
+// @media (max-width: 568px){
+//     font-size:8px;
+// }
+// `
 const Link = styled.a`
 cursor: pointer;
 z-index: 100;
 `
-const ArrowDownwardStyle = styled(ArrowDownward)`
-width: 40px;
-`
-const ArrowContainer = styled.div`
-@media(max-width:768px){
-    display: none;
-}
-`
+// const ArrowDownwardStyle = styled(ArrowDownward)`
+// width: 40px;
+// `
+// const ArrowContainer = styled.div`
+// @media(max-width:768px){
+//     display: none;
+// }
+// `
