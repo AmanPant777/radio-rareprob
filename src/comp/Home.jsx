@@ -20,7 +20,7 @@ const Home = () => {
                     <source src={videoplay} type="video/mp4" />
                 </Video>
                 <FooterContainer>
-                    <Footer text={true} icon={true} read={true} />
+                    <Footer text={false} icon={true} read={true} />
                 </FooterContainer>
                 {product && (
                     <SideViewContainer>

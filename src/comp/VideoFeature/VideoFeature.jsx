@@ -5,8 +5,8 @@ const VideoFeature = () => {
     return (
         <Container>
             <FeatureContainer>
-                 <FeatureTitle>All Features in Single App</FeatureTitle>
-                 <FeatureText>Music, Photos, Videos and Online Tranding videos in Single App.</FeatureText>
+                 <FeatureTitle>Multiple features in a Single App</FeatureTitle>
+                 <FeatureText>Music, Photos, Videos and Online Trending videos are accessible.</FeatureText>
                  <ImageContainer>
                      <Image src="images/picture.png"/>
                  {/* <FeatureImage src='/images/mobile1.png' middle={true}/>
@@ -23,9 +23,13 @@ const Container=styled.div`
 width: 100%;
 height: 100%;
 margin-top: 60px;
-@media(max-width:768px){
-    margin-top:0;
-    margin-left: 20px;
+@media(max-width:788px){
+    margin-top:30px;
+    margin-left: 50px;
+}
+@media(max-width:498px){
+    margin-left: 40px;
+    margin-top: 30px;
 }
 `
 const FeatureContainer=styled.div`
@@ -33,7 +37,7 @@ const FeatureContainer=styled.div`
 `
 const FeatureTitle=styled.div`
 text-align: center;
-font-size:40px;
+font-size:30px;
 color: rgba(0,0,0,0.8);
 font-weight:bold;
 padding:20px;
@@ -41,15 +45,18 @@ padding:20px;
     font-size:20px;
     padding:0;
 }
+@media(max-width: 498px){
+    font-size:15px;
+    padding:0;
+}
 `
 const FeatureText=styled.div`
 text-align: center;
 font-size:20px;
 color: rgba(0,0,0,0.9);
-
 @media(max-width: 768px){
     font-size:11px;
-    padding-top: 6px;
+    padding-top: 5px;
 }
 `
 // const FeatureImage=styled.img`
@@ -84,9 +91,20 @@ margin: auto;
 `
 const Image=styled.img`
 object-fit: contain;
-width: 100%;
+width: 90%;
 margin-top: 40px;
+@media(max-width:1200px){
+  margin-top: 20px;
+  width:85% ;
+margin-left: 25px;
+}
 @media(max-width:768px){
   margin-top: 20px;
+  width:80% ;
+}
+@media(max-width:498px){
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 80%;
 }
 `

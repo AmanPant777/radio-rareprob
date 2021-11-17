@@ -92,13 +92,16 @@ margin-top: ${props=>props.first&&'20px'};
 }
 `
 const AboutText=styled.p`
-font-size:25px;
+font-size:22px;
 width:80%;
 line-height:1.7;
-@media(max-width: 768px){
-    font-size:10px;
+@media(max-width: 1200px){
+    font-size:20px;
 line-height:1.2;
-
+}
+@media(max-width: 768px){
+    font-size:15px;
+line-height:1.2;
 }
 `
 const GridContainer=styled.div`

@@ -13,27 +13,23 @@ const VideoScreen = () => {
                
                 <AboutTitle>About  App</AboutTitle>
                 <AboutText>
-                    Rocks Player Ultra HD Video Player is Simple and Fast video player
-                    with which you can play HD & ultra HD video of all formats.
-                    Rocks Player offer unique set of features like Gesture
-                    control for Volume, Brightness, Playback speed and Forward,
-                    Assistance of subtitles of videos, Auto sensor etc.
-                    Rocks Player give you enjoy smoother, better quality videos
-                    movies.
+                Rocks Player Ultra HD Video Player is a Simple and Fast Video Player in which you can play HD and Ultra HD videos of all formats. Rocks Player offers a unique set of features like Gesture controls for Volume, Brightness and Playback speed along with forward and rewind. The assistance of subtitles of videos, Auto sensor etc. Also, Rocks Player supports smoother and better quality videos & movies.
                 </AboutText>
                 <KeyTitle>Key Features</KeyTitle>
                 <HeadingContainer two={true}>
                 <KeyGrayTitle>Smooth Gesture</KeyGrayTitle>
                 <Text>Gesture control for Volume, Brightness, Playback speed and Forward</Text>
+                <Image1 src="images/kids.png"/>
                 </HeadingContainer>
                 
             </AboveContainer>
-            <Video autoPlay="autoPlay" playsinline autoplay muted loop >
+          
+            {/* <Video autoPlay="autoPlay" playsinline autoplay muted loop >
                 <source src={kid} type="video/mp4" />
-            </Video>
+            </Video> */}
             <PictureInPictureContainer>
                 <PictureContainer>
-                    <PictureTitle>Picture-in-picture mode  </PictureTitle>
+                    <PictureTitle>Picture-in-picture mode</PictureTitle>
                     <PictureText>View video in pip mode without block screen.</PictureText>
                     <PictureImage src='/images/pop.png' />
                 </PictureContainer>
@@ -106,7 +102,7 @@ color: red;
 word-spacing: 5px;
 font-weight: 900;
 @media(max-width: 768px){
-    font-size:15px;
+    font-size:20px;
 }
 `
 const AboutText = styled.div`
@@ -114,8 +110,12 @@ text-align: left;
 line-height:1.7;
 margin-top: 30px;
 color: black;
+font-size: 22px;
+@media(max-width: 1200px){
+font-size:20px;
+}
 @media(max-width: 768px){
-font-size:12px;
+font-size:15px;
 }
 `
 const KeyTitle = styled.div`
@@ -135,13 +135,15 @@ font-size:20px;
 width: 40%;
 text-align: center;
 color: rgba(0,0,0,0.9);
-
 @media(max-width: 768px){
     margin-top:13px;
     width: 80%;
     font-size: 15px;
     overflow-x: hidden;
-
+}
+@media(max-width:498px){
+    margin-top:5px ;
+    font-size:13px ;
 }
 `
 const KeyGrayTitle = styled.div`
@@ -153,18 +155,28 @@ color: rgba(0,0,0,0.8);
     margin-top:2%;
     font-size: 15px;
 }
+@media(max-width: 498px){
+    margin-top:0;
+    font-size: 15px;
+}
 `
 const PictureInPictureContainer = styled.div`
 width: 70%;
 display: flex;
 /* margin-left: 5%; */
 margin: auto;
-margin-top: 100px;
+margin-top: 30px;
 justify-content:space-between;
-@media(max-width: 768px){
-    margin-top:10px;
+@media(max-width: 788px){
+    margin-top:30px;
     width:85%;
-    height: fit-content;
+    max-height: 500px;
+    margin-left: 3%;
+}
+@media(max-width: 498px){
+    margin-top:30px;
+    width:88%;
+    max-height: 400px;
     margin-left: 3%;
 }
 `
@@ -183,6 +195,10 @@ text-align: center;
 padding: 20px;
 color: rgba(0,0,0,0.8);
 @media(max-width: 768px){
+    font-size:15px;  
+    padding:5px;
+}
+@media(max-width: 498px){
     font-size:15px;
     padding:5px;
 }
@@ -190,11 +206,11 @@ color: rgba(0,0,0,0.8);
 const PictureText = styled.div`
 font-size: 15px;
 color: rgba(0,0,0,0.9);
-
 text-align: center;
 @media(max-width: 768px){
     font-size:11px;
 }
+
 `
 const PictureImage = styled.img`
 width: 100%;
@@ -202,7 +218,10 @@ height: 450px;
 object-fit:contain;
 margin-top: 20px;
 @media(max-width: 768px){
-    height: 60%;
+    height: 300px;
+}
+@media(max-width: 498px){
+    height: 200px;
 }
 `
 const VideoFeatureContainer = styled.div`
@@ -210,19 +229,25 @@ width: 75%;
 margin-left: 10%;
 @media(max-width: 768px){
     width: 70%;
-    margin-left: 5%;
+    margin-left: 2%;
 }
 `
 const Video = styled.video`
 width: 40%;
 margin-left: 28%;
 margin-top: 40px;
-border-radius: 35px;
+border-radius: 30px;
 margin-right: auto;
 @media(max-width: 768px){
-   width: 60%;
-   margin-left: 16%;
-   border-radius:30px;
+   width: 50%;
+   margin-left: 20%;
+   border-radius:20px;
+}
+@media(max-width: 498px){
+   width: 48%;
+   margin-left: 21%;
+   margin-top: 5px;
+   border-radius:20px;
 }
 `
 const HeadingContainer=styled.div`
@@ -231,4 +256,15 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 margin-top: ${props=>props.two&&`40px`};
+`
+const Image1=styled.img`
+max-width: 500px;
+object-fit: contain;
+@media(max-width:788px){
+    max-width: 400px;
+}
+@media(max-width:488px){
+    max-width: 250px;
+    margin-left: 20px;
+}
 `

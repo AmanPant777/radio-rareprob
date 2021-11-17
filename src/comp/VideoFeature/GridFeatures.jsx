@@ -56,7 +56,10 @@ export default GridFeatures
 
 const Container = styled.div`
 margin-top: 50px;
-
+@media(max-width:788px){
+    margin-top: 30px;
+    margin-left: 20px;
+}
 `
 const Title = styled.div`
 color: rgba(0,0,0,0.7);
@@ -81,7 +84,7 @@ margin-top: 20px;
 const GridContainer = styled.div`
 display: grid;
 grid-template-columns: repeat(3,minmax(0,1fr));
-margin-top:-40px;
+margin-top:0px;
 @media(max-width: 768px){
     grid-template-columns: repeat(2,minmax(0,1fr));
     margin-top:10px;
@@ -99,7 +102,10 @@ text-align: center;
 background-position:center;
 background-image: url(${props => props.one ? 'icons/video.svg' : props.two ? 'icons/music.svg' : props.three ? 'icons/online.svg' : props.four ? 'icons/photo.svg' : props.six ? 'icons/more.svg' : props.five ? 'icons/themes.svg' : ''});
 transition: transform .2s;
-&:hover{transform: scale(1.1)}; 
+&:hover{transform: scale(1.1)}; @media(max-width:768px){
+  margin-top: 20px;
+  width:90% ;
+}
 @media(max-width: 768px){
     height: 40px;
     width: 40px;
@@ -109,24 +115,25 @@ transition: transform .2s;
 const ImageTitle = styled.p`
 font-size: 20px;
 padding: 10px;
-color: rgba(0,0,0,0.7);
+color: rgba(0,0,0,0.8);
 margin-top: 20px;
 text-align: center;
 font-weight: bold;
 @media(max-width: 768px){
-    font-size: 11px;
+    font-size: 13px;
     margin-top: 0;
 }
 `
 const ImageText = styled.p`
 font-size: 15px;
 text-align: center;
-width: 80%;
+width: 88%;
 margin: auto;
-color: rgba(0,0,0,0.7);
-
+color: rgba(0,0,0,0.9);
 @media(max-width: 768px){
-    font-size:9px;
+    font-size:10px;
+    line-height: 1.5;
+    width: 97%;
 }
 `
 const Link=styled.a`
@@ -134,22 +141,24 @@ cursor: pointer;
 display: inline-block;
 max-width: 200px;
 margin-top: 40px;
+margin-left: -15px;
 @media(max-width:768px){
    margin-top: 0;
    margin-bottom: 40px;
+   margin-left: 17px;
 }
 `
 const Image=styled.img`
 max-width: 220px;
 @media (max-width: 768px){
-    width: 120px;
+    width: 150px;
     margin-left: -20%;
 }
 @media (max-width: 1200px){
-    width: 150px;
+    width: 180px;
 }
 @media (max-width: 568px){
-    width: 100px;
+    width: 120px;
 }
 `
 const LinkContainer=styled.div`
@@ -157,4 +166,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+@media(max-width:768px){
+    padding-bottom: 20px;
+}
 `
