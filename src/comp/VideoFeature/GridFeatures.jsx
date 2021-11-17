@@ -23,7 +23,7 @@ const GridFeatures = () => {
                 </Grid>
                 <Grid>
                     <ImageContainer four={true}></ImageContainer>
-                    <ImageTitle>Photo albums</ImageTitle>
+                    <ImageTitle>Photo Albums</ImageTitle>
                     <ImageText>Search and manage photos from local storage in device.</ImageText>
                 </Grid>
                 <Grid>
@@ -34,7 +34,7 @@ const GridFeatures = () => {
                 <Grid>
                     <ImageContainer six={true}></ImageContainer>
                     <ImageTitle>More Features</ImageTitle>
-                    <ImageText>Dual Audio,subtitle search, PIP mode in video player playback speed, easy control on volume and brightness etc.</ImageText>
+                    <ImageText>Dual Audio, subtitle search, PIP mode in video player playback speed, easy control on volume and brightness etc.</ImageText>
                 </Grid>
             </GridContainer>
             <Link href="https://play.google.com/store/apps/details?id=com.rocks.music.videoplayer">
@@ -140,11 +140,11 @@ margin-top: 40px;
 const Image=styled.img`
 max-width: 220px;
 @media (max-width: 768px){
-    width: 100px;
+    width: 120px;
     margin-left: -20%;
 }
 @media (max-width: 1200px){
-    width: 100px;
+    width: 150px;
 }
 @media (max-width: 568px){
     width: 70px;

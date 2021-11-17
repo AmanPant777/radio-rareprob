@@ -12,17 +12,17 @@ const MusicScreen = () => {
                 </TitleContainer>
                 <AboutContainer>
                     <Heading>About App</Heading>
-                    <Text>Browse and play your music by albums,artists,genres,songs,playlists, <br /> folders and albums artists.</Text>
+                    <Text>Browse and play your music by albums, artists, genres, songs, playlists, <br /> folders and albums artists.</Text>
                     <Text nomargintop={true}>Music Player lets you manage all your audio files and play the music file quickly and easily. <br /> You may easily browse and play music songs and create your playlists.</Text>
-                    <Text nomargintop={true}>Audio Player for all types of Audio Formats Music Player supports all music <br />and audio formats including MP3,MIDI,WAV,FLAC,AAC,APE etc</Text>
+                    <Text nomargintop={true}>Audio Player for all types of Audio Formats Music Player supports all music <br />and audio formats including <strong>MP3, MIDI, WAV, FLAC, AAC, APE </strong>  etc</Text>
                     <Heading>Features</Heading>
                     <br />
                     <br />
-                    <Text zeromargin={true}>Supports all music and audio formats, like MP3,MIDI,WAV,FLAC,AAC,APE etc</Text>
+                    <Text zeromargin={true}>Supports all music and audio formats, like <br /> <strong> MP3, MIDI, WAV, FLAC, AAC, APE</strong> etc</Text>
                     <Text zeromargin={true}>Play song in shuffle order or loop</Text>
                     <Text zeromargin={true}>Browse and play your music by playlists,songs,albums,artists, <br /> folders and album artists</Text>
                     <Text zeromargin={true}>Show recent playlist and most top song playlists.</Text>
-                    <Text zeromargin={true}>Notification STATUS support :display album artwork,title <br /> and artists,play/pause,skip forward and stop CONTROLS in notification status.</Text>
+                    <Text zeromargin={true}>Notification STATUS support :display album artwork,title <br /> and artists,play/pause,skip forward <br /> and stop CONTROLS in notification status.</Text>
                     <Text zeromargin={true}>Powerfull Equalizer with bass boost,reverb effect etc </Text>
                     <Text zeromargin={true}>Set music as a ringtone of your choice, or you can change it.</Text>
                     <Text zeromargin={true}>Sleep Timer</Text>
@@ -33,7 +33,7 @@ const MusicScreen = () => {
                     <Text zeromargin={true}>Folder support play songs by folder.</Text>
                     <Text zeromargin={true}>Settings to control Headset settings.</Text>
                     <Text zeromargin={true}>Powerfull MP3 Cutter and Ringtone Cutter.</Text>
-                    <Text zeromargin={true}>Easily custamizable best themes- Light/Dark/Black/colour themes. </Text>
+                    <Text zeromargin={true}>Easily custamizable best themes <br /> Light/Dark/Black/colour themes. </Text>
                 </AboutContainer>
             </AboveContainer>
             <GridContainer>

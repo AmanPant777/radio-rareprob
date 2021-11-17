@@ -223,14 +223,17 @@ margin-top: 50px;
 `
 const Image1=styled.img`
 max-width: 220px;
+margin-top: 40px;
 @media (max-width: 768px){
-    width: 100px;
+    width: 120px;
     margin-left: -20%;
 }
 @media (max-width: 1200px){
-    width: 100px;
+    width: 150px;
+    margin-top: 40px;
 }
 @media (max-width: 568px){
     width: 70px;
+    margin-top: 20px;
 }
 `

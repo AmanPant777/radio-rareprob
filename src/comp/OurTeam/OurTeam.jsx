@@ -109,6 +109,9 @@ const FormContainer = styled.div`
 margin-top: 100px;
 width: 80%;
 margin:100px auto;
+padding: 20px;
+border-radius: 40px;
+background-color: rgba(255,255,255,1);
 @media(max-width: 768px){
     margin-top:0;
 }

@@ -20,13 +20,15 @@ const styles = muiBaseTheme => ({
     },
     "@media (max-width: 768px)": {
       width: 190,
-      margin: 0,
+      margin: 10,
     },
     "@media (min-width: 1200px)": {
       width: 400
     },
     "@media (max-width: 458px)": {
-      width: 150
+      width: 150,
+      margin: 2,
+
     },
   },
   media: {

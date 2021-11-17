@@ -202,14 +202,17 @@ margin-top: 40px;
 const Image1=styled.img`
 max-width: 220px;
 @media (max-width: 768px){
-    width: 100px;
-    margin-left: 0;
+    width: 120px;
+    margin-left: -5%;
 }
 @media (max-width: 1200px){
-    width: 100px;
+    width: 150px;
+    margin-top: 40px;
 }
 @media (max-width: 568px){
-    width: 90px;
-    margin-left: -20px;
+    width: 70px;
+    margin-top: 20px;
+    margin-left: -20%;
+
 }
 `

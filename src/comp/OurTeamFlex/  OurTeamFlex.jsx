@@ -63,11 +63,6 @@ const OurTeamFlex = () => {
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image src='images/rajdeepnahar.png' />
-                        <Text>Rajdeep Nahar </Text>
-                        <Textbelow>Senior Graphic Designer </Textbelow>
-                    </Flex1>
-                    <Flex1>
                         <Image src='images/akshay.jpg' />
                         <Text>Akshay Jain </Text>
                         <Textbelow>Software Engineer </Textbelow>
@@ -82,9 +77,13 @@ const OurTeamFlex = () => {
                         <Text>Sanidhya Singh </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
+                    <Flex1>
+                        <Image src='images/rajdeepnahar.png' />
+                        <Text>Rajdeep Nahar </Text>
+                        <Textbelow> Graphic Designer </Textbelow>
+                    </Flex1>
                 </FlexContainer1>
                 <ArrowRightScroll onClick={() => scrollHandlerRight("scroll1")} />
-
             </ScrollContainer>
 
 
@@ -142,8 +141,8 @@ margin-top: 20px;
 const FlexContainer1 = styled.div`
 display: flex;
 overflow-x: scroll; 
-margin-top: 30px;
 width: 60%;
+margin: 30px 20px;
 min-height: 300px;
 overflow-y: hidden;
 scroll-behavior:smooth;
