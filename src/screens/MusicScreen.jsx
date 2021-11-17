@@ -22,12 +22,12 @@ const MusicScreen = () => {
                     <Text zeromargin={true}>Play song in shuffle order or loop</Text>
                     <Text zeromargin={true}>Browse and play your music by playlists,songs,albums,artists, <br /> folders and album artists</Text>
                     <Text zeromargin={true}>Show recent playlist and most top song playlists.</Text>
-                    <Text zeromargin={true}>Notification STATUS support :display album artwork,title <br /> and artists,play/pause,skip forward <br /> and stop CONTROLS in notification status.</Text>
+                    <Text zeromargin={true}>Notification status support :display album artwork,title <br /> and artists,play/pause,skip forward <br /> and stop Controlos in notification status.</Text>
                     <Text zeromargin={true}>Powerfull Equalizer with bass boost,reverb effect etc </Text>
                     <Text zeromargin={true}>Set music as a ringtone of your choice, or you can change it.</Text>
                     <Text zeromargin={true}>Sleep Timer</Text>
                     <Text zeromargin={true}>Headset/Bluetooth support.</Text>
-                    <Text zeromargin={true}>Music Library wide SEARCH</Text>
+                    <Text zeromargin={true}>Music Library wide Search</Text>
                     <Text zeromargin={true}>Custom Playlists,set albums,artists ,genres,folders songs <br /> to the playlists, show recent playlist. </Text>
                     <Text zeromargin={true}>Equalizer enable with vitualizer and Bass Boost Features.</Text>
                     <Text zeromargin={true}>Folder support play songs by folder.</Text>
