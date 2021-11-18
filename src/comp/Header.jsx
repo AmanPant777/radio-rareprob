@@ -163,6 +163,7 @@ cursor: pointer;
     padding: 1px;
     font-size:10px;
     width: 60px;
+    border-radius: 20px;
 }
 @media(max-width: 488px){
     padding: 1px;

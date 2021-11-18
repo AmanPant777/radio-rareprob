@@ -216,6 +216,10 @@ margin-left: 17%;
     margin-top: -40px;
     margin-left: 13%;
 }
+@media(max-width:488px){
+    margin-top: -40px;
+    margin-left: 16%;
+}
 `
 const FeedbackContainer = styled.div`
 display: flex;
@@ -230,6 +234,12 @@ margin-left: 15%;
     align-items: center;
     margin-bottom: 40px;
     margin-left: 11%;
+}
+@media(max-width: 488px){
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 15%;
 }
 `
 const Container1 = styled.div`

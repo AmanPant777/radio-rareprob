@@ -74,13 +74,13 @@ const Icon = styled.img`
 width: 240px;
 object-fit: contain;
 @media (max-width: 768px){
-    width: 120px;
-}
-@media (max-width: 1200px){
     width: 150px;
 }
+@media (max-width: 1200px){
+    width: 180px;
+}
 @media (max-width: 568px){
-    width: 90px;
+    width: 120px;
 }
 `
 // const ReadMoreContainer = styled.a`

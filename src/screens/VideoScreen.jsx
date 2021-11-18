@@ -20,7 +20,6 @@ const VideoScreen = () => {
                 <Image1 src="images/kids.png"/>
                 </HeadingContainer>
             </AboveContainer>
-          
             {/* <Video autoPlay="autoPlay" playsinline autoplay muted loop >
                 <source src={kid} type="video/mp4" />
             </Video> */}
