@@ -28,7 +28,7 @@ const VideoScreen = () => {
                 <PictureContainer>
                     <PictureTitle>Picture-in-picture mode</PictureTitle>
                     <PictureText>View video in pip mode without block screen.</PictureText>
-                    <PictureImage src='/images/pop.png' />
+                    <PictureImage src='/images/pop.png' one={true}/>
                 </PictureContainer>
                 <PictureContainer>
                     <PictureTitle>Online Videos</PictureTitle>
@@ -222,6 +222,7 @@ margin-top: 20px;
 }
 @media(max-width: 498px){
     height: 200px;
+    margin-top: ${props=>props.one&&`40px`};
 }
 `
 const VideoFeatureContainer = styled.div`

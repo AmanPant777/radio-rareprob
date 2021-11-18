@@ -28,7 +28,7 @@ margin-top: 60px;
     margin-left: 50px;
 }
 @media(max-width:498px){
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 30px;
 }
 `

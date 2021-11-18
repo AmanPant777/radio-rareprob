@@ -35,7 +35,7 @@ width: 100%;
 height: 100%;
 position: relative;
 @media(max-width: 768px){
-    height: 200px;
+    height: 300px;
 }
 `
 const Video=styled.video`
