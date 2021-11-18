@@ -104,9 +104,11 @@ position: fixed;
     width: 110px;
 }
 @media (max-width: 768px){
-    width: 50px;
+    width:70px;
 }
-
+@media (max-width: 488px){
+    width:40px;
+}
 `
 const MusicContainer = styled.div`
 margin-top: -40px;

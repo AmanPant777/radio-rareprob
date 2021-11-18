@@ -71,6 +71,7 @@ align-items: center;
 @media(max-width: 768px){
     padding: 0;
     flex: 0.3;
+    margin-right: 18px;
 }
 `
 const HomeContainer = styled.div`
@@ -79,7 +80,7 @@ const Home = styled.div`
 color: black;
 background-color:  rgba(255, 255, 255, 0.5);
 border-radius: 50px;
-padding: 5px;
+padding: 5px; 
 font-size:20px;
 width: 150px;
 cursor: pointer;
@@ -98,7 +99,12 @@ margin: 10px;
 @media(max-width: 768px){
     padding: 1px;
     font-size:10px;
-    width: 60px;
+    width: 80px;
+}
+@media(max-width: 488px){
+    padding: 1px;
+    font-size:10px;
+    width: 50px;
 }
 `
 const AboutContainer = styled.div``
@@ -127,6 +133,11 @@ text-align: center;
     font-size:10px;
     width: 60px;
 }
+@media(max-width: 488px){
+    padding: 1px;
+    font-size:10px;
+    width: 50px;
+}
 `
 const ProductContainer = styled.div``
 const Product = styled.div`
@@ -152,6 +163,11 @@ cursor: pointer;
     padding: 1px;
     font-size:10px;
     width: 60px;
+}
+@media(max-width: 488px){
+    padding: 1px;
+    font-size:10px;
+    width: 50px;
 }
 // `
 // const IconContainer=styled.div`

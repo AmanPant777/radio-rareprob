@@ -150,7 +150,7 @@ color: red;
 }
 @media(max-width: 768px){
 padding:5px;
-width: 50%;
+width: 49%;
 border-radius: 20px;
 &::placeholder{
     color: red;
@@ -222,8 +222,9 @@ display: flex;
 justify-content: center;
 align-items: flex-start;
 height: 200px;
-width: 70%;
+width: 65%;
 margin:auto;
+margin-left: 15%;
 @media(max-width: 768px){
     flex-direction: column;
     align-items: center;

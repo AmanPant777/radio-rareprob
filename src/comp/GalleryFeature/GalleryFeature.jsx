@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import OurTeam from '../OurTeam/OurTeam'
 import Zoom from 'react-reveal/Zoom'
+import KeyFeatures from '../../Other/KeyFeatures'
 
 const GalleryFeature = () => {
     return (
@@ -9,7 +10,7 @@ const GalleryFeature = () => {
           <AboutTitle first={true}>About App</AboutTitle>
           <AboutText>Photo Editor and Collage Maker Gallery App with gallery-vault features is a nice app for android devices which has these features.</AboutText>
           <AboutTitle>Key Features</AboutTitle>
-          <GridContainer>
+          {/* <GridContainer>
               <Grid>
                   <CircleContainer>
                       <Circle big={true} one={true}>
@@ -57,7 +58,10 @@ const GalleryFeature = () => {
                       </CircleText>
                   </CircleContainer>
                 </Grid>
-          </GridContainer>
+          </GridContainer> */}
+
+
+          <KeyFeatures/>
           <Zoom>
           <Image src="images/artboard.png"/>
           </Zoom>
@@ -104,70 +108,71 @@ line-height:1.2;
 line-height:1.2;
 }
 `
-const GridContainer=styled.div`
-display: grid;
-grid-template-columns: repeat(2,minmax(0,1fr));
-width: 100%;
-@media (max-width: 768px) {
-    width: 100%;
-    height:fit-content;
-}
-`
-const Grid=styled.div`
-height:200px;
-margin: 20px 0;
-@media(max-width: 768px){
-    margin: 0;
-    height: fit-content;
-}
-`    
-const CircleContainer=styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-@media(max-width:1600px ){
-   margin-right: ${props=>props.bigscreen&&` 30px`};
-}
-`
-const Circle=styled.div`
-height:80px;
-width:160px;
-background-image: url(${props=>props.one?'icons/clrg.svg':props.two?'icons/lock.svg':props.three?'icons/color.svg':props.four?'icons/crop.svg':''});
-background-repeat: no-repeat;
-background-size: contain;
-width: ${props=>props.minusspace&&` 120px`};
-@media(max-width: 768px){
-    border-radius:70%;
-    height: 40px;
-    width: 40px;
-    padding: 10px;
-    margin-right: 10px;
-}
-`
-const CircleText=styled.p`
-color: black;
-line-height:1.5;
-@media(max-width: 768px){
-    padding: 0;
-    font-size: 8px;
-    width: 80%;
-line-height:1.2;
+// const GridContainer=styled.div`
+// display: grid;
+// grid-template-columns: repeat(2,minmax(0,1fr));
+// width: 100%;
+// @media (max-width: 768px) {
+//     width: 100%;
+//     height:fit-content;
+// }
+// `
+// const Grid=styled.div`
+// height:200px;
+// margin: 20px 0;
+// @media(max-width: 768px){
+//     margin: 0;
+//     height: fit-content;
+// }
+// `    
+// const CircleContainer=styled.div`
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// @media(max-width:1600px ){
+//    margin-right: ${props=>props.bigscreen&&` 30px`};
+// }
+// `
+// const Circle=styled.div`
+// height:80px;
+// width:160px;
+// background-image: url(${props=>props.one?'icons/clrg.svg':props.two?'icons/lock.svg':props.three?'icons/color.svg':props.four?'icons/crop.svg':''});
+// background-repeat: no-repeat;
+// background-size: contain;
+// width: ${props=>props.minusspace&&` 120px`};
+// @media(max-width: 768px){
+//     border-radius:70%;
+//     height: 40px;
+//     width: 40px;
+//     padding: 10px;
+//     margin-right: 10px;
+// }
 
-}
-@media(max-width: 468px){
-    padding: 0;
-    font-size: 9px;
-    width: 50%;
-line-height:1.4;
-margin-top: 20px;
-}
-`     
+// const CircleText=styled.p`
+// color: black;
+// line-height:1.5;
+// @media(max-width: 768px){
+//     padding: 0;
+//     font-size: 8px;
+//     width: 80%;
+// line-height:1.2;
+
+// }
+// @media(max-width: 468px){
+//     padding: 0;
+//     font-size: 9px;
+//     width: 50%;
+// line-height:1.4;
+// margin-top: 20px;
+// }
+// `     
 const Image=styled.img`
 width: 60%;
 margin: auto;
 object-fit: contain;
 margin-left: 20%;
 height:600px;
+margin-top:30px;
 @media(max-width: 1200px){
     width: 100%;
     margin-left: 0;

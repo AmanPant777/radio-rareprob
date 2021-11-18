@@ -12,9 +12,13 @@ const MusicScreen = () => {
                 </TitleContainer>
                 <AboutContainer>
                     <Heading>About App</Heading>
-                    <Text heading={true}>Browse and play your music by albums, artists, genres, songs, playlists, <br /> folders and albums artists.</Text>
-                    <Text nomargintop={true} heading={true}>Music Player lets you manage all your audio files and play the music file quickly and easily. <br /> You may easily browse and play music songs and create your playlists.</Text>
-                    <Text nomargintop={true} heading={true}>Audio Player for all types of Audio Formats Music Player supports all music <br />and audio formats including <br /> <strong>MP3, MIDI, WAV, FLAC, AAC, APE </strong>  etc</Text>
+                    <Text heading={true}>Browse and play your music by albums, artists, genres, songs, playlists,
+folders and albums artists.</Text>
+                    <Text nomargintop={true} heading={true}>
+                    Music Player lets you manage all your audio files and play the music file quickly and easily.
+You may easily browse any music. Also, you can create playlist of your favourite songs.
+                        </Text>
+                    <Text nomargintop={true} heading={true}>It supports various Audio Formats including <strong> MP3, MIDI, WAV, FLAC, AAC, APE etc</strong> </Text>
                     <Heading>Features</Heading>
                     <br />
                     <br />

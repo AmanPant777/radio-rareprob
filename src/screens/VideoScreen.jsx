@@ -260,13 +260,13 @@ justify-content: center;
 margin-top: ${props=>props.two&&`40px`};
 `
 const Image1=styled.img`
-max-width: 500px;
+max-width: 550px;
 object-fit: contain;
 @media(max-width:788px){
-    max-width: 400px;
+    max-width: 450px;
 }
 @media(max-width:488px){
-    max-width: 250px;
+    max-width: 280px;
     margin-left: 20px;
 }
 `
