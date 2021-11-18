@@ -32,7 +32,7 @@ const OurTeam = () => {
     return (
         <Container>
             <OurTeamTitle>Our Team</OurTeamTitle>
-            <OurTeamText>"Teamwork is the ability to work togethor towards a common vision.The ability to direct indivisual accomplishments towards organization objectives. It is the fuel that allow common people to gain uncommom results."</OurTeamText>
+            <OurTeamText>"Teamwork is the ability to work together towards a common vision. The ability to direct individual accomplishments towards organizational objectives. It is the fuel that allows common people to gain uncommon results."</OurTeamText>
             <OurTeamFlex />
             <FormContainer id="about">
                 <FormTitle>Write To Us</FormTitle>

@@ -33,20 +33,22 @@ const KeyFeatures = () => {
                 <Flex>
                     <Image src='icons/color.svg'/>
                     <Text>
-                        <Para> <strong>  Add coloured text to photos </strong></Para>
-                   <Para>  Add text on Photo with yur choice of text color </Para>
-                  <Para>Apply text on Photo and apply different styles and text size to the text. </Para>
+                        <Para> <strong> Edit Photos
+</strong></Para>
+                   <Para> Edit your photos by adding text on your photo with different styles and sizes  </Para>
+                  <Para>Crop Photo freely with multi-aspect ratio. </Para>
+                  <Para>Also, Rotate photo to perfect angle, horizontal and vertical according to your preference.</Para>
                     </Text>
                 </Flex>
                 <Flex>
-                    <Image src='icons/crop.svg'/>
+                    <Image src='icons/status.svg'/>
                     <Text>
-                        <Para><strong> 
-                        Rotate and crop photos </strong>
+                        <Para><strong> Status downloader
+                        </strong>
                         </Para>
-                <Para> Crop Photo freely (in multi-aspect ratio) </Para>
-                 <Para> Crop photo for multiple aspect ratios. </Para>
-           <Para> Rotate photo to perfect angle, horizontal, vertical etc.  </Para>
+                        <Para> Looking for story downloader?</Para>
+                <Para> Gallery supports story downloader. </Para>
+                 <Para> Download your friend's WhatsApp stories and share them with other social media platforms too. </Para>
                     </Text>
                 </Flex>
            </FlexContainer>
