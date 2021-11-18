@@ -8,7 +8,7 @@ const GalleryFeature = () => {
     return (
       <Container>
           <AboutTitle first={true}>About App</AboutTitle>
-          <AboutText>Photo Editor and Collage Maker Gallery App with gallery-vault features is a nice app for android devices which has these features.</AboutText>
+          <AboutText>Photo Editor and Collage Maker Gallery App with gallery-vault features is an excellent app for android devices supporting various features.</AboutText>
           <AboutTitle>Key Features</AboutTitle>
           {/* <GridContainer>
               <Grid>
@@ -165,7 +165,8 @@ line-height:1.2;
 // line-height:1.4;
 // margin-top: 20px;
 // }
-// `     
+// `   
+
 const Image=styled.img`
 width: 60%;
 margin: auto;

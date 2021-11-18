@@ -11,7 +11,7 @@ const MusicScreen = () => {
                     <Icon src='icons/musicplayer.png' />
                 </TitleContainer>
                 <AboutContainer>
-                    <Heading>About App</Heading>
+                    <Heading>About an App</Heading>
                     <Text heading={true}>Browse and play your music by albums, artists, genres, songs, playlists,
 folders and albums artists.</Text>
                     <Text nomargintop={true} heading={true}>
@@ -22,22 +22,31 @@ You may easily browse any music. Also, you can create playlist of your favourite
                     <Heading>Features</Heading>
                     <br />
                     <br />
-                    <Text zeromargin={true}>Supports all music and audio formats, like <br /> <strong> MP3, MIDI, WAV, FLAC, AAC, APE</strong> etc</Text>
-                    <Text zeromargin={true}>Play song in shuffle order or loop</Text>
-                    <Text zeromargin={true}>Browse and play your music by playlists,songs,albums,artists, <br /> folders and album artists</Text>
-                    <Text zeromargin={true}>Show recent playlist and most top song playlists.</Text>
-                    <Text zeromargin={true}>Notification status support :display album artwork,title <br /> and artists,play/pause,skip forward <br /> and stop Controlos in notification status.</Text>
-                    <Text zeromargin={true}>Powerfull Equalizer with bass boost,reverb effect etc </Text>
-                    <Text zeromargin={true}>Set music as a ringtone of your choice, or you can change it.</Text>
-                    <Text zeromargin={true}>Sleep Timer</Text>
-                    <Text zeromargin={true}>Headset/Bluetooth support.</Text>
-                    <Text zeromargin={true}>Music Library wide Search</Text>
-                    <Text zeromargin={true}>Custom Playlists,set albums,artists ,genres,folders songs <br /> to the playlists, show recent playlist. </Text>
-                    <Text zeromargin={true}>Equalizer enable with vitualizer and Bass Boost Features.</Text>
-                    <Text zeromargin={true}>Folder support play songs by folder.</Text>
-                    <Text zeromargin={true}>Settings to control Headset settings.</Text>
-                    <Text zeromargin={true}>Powerfull MP3 Cutter and Ringtone Cutter.</Text>
-                    <Text zeromargin={true}>Easily custamizable best themes <br /> Light/Dark/Black/colour themes. </Text>
+                    <Text zeromargin={true}>
+                    Supports music and audio formats, <br /> like <strong> MP3, MIDI, WAV, FLAC, AAC, APE </strong>  etc.
+                        </Text>
+                    <Text zeromargin={true}> Play song in shuffle order or loop.  </Text>
+                    <Text zeromargin={true}> Browse and play music with playlists, albums and artists.  </Text>
+                    <Text zeromargin={true}> Show recent playlist and most top song playlists. </Text>
+                    <Text zeromargin={true}>
+                    Notification STATUS support:display album artwork, <br /> title
+                      and artists, play/pause, skip forward <br /> and stop CONTROLS in notification status.     
+                        </Text>
+                    <Text zeromargin={true}> Powerful Equalizer with bass boost, reverb effect and many more. </Text>
+                    <Text zeromargin={true}>  Set music as a ringtone of your choice.
+                                </Text>
+                    <Text zeromargin={true}> Enable Sleep Timer.
+ </Text>
+                    <Text zeromargin={true}> Headset/Bluetooth support.
+</Text>
+                    <Text zeromargin={true}> Music Library wide SEARCH
+ </Text>
+                    <Text zeromargin={true}> Custom Playlists, set albums, artists, genres, folders songs <br />
+to the playlists, show recent playlists.
+ </Text>
+                    <Text zeromargin={true}> Settings to control Headset settings.</Text>
+                    <Text zeromargin={true}> Powerful MP3 Cutter and Ringtone Cutter.</Text>
+                    <Text zeromargin={true}> Easily customizable best themes- <br /> Light/Dark/Black/colour themes.</Text>
                 </AboutContainer>
             </AboveContainer>
             <GridContainer>
