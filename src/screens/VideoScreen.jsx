@@ -10,7 +10,7 @@ const VideoScreen = () => {
                 <Title>Video Player Pro</Title>
                 </HeadingContainer>
                
-                <AboutTitle>About  App</AboutTitle>
+                <AboutTitle>About an App</AboutTitle>
                 <AboutText>
                 Rocks Player Ultra HD Video Player is a Simple and Fast Video Player in which you can play HD and Ultra HD videos of all formats. Rocks Player offers a unique set of features like Gesture controls for Volume, Brightness and Playback speed along with forward and rewind. The assistance of subtitles of videos, Auto sensor etc. Also, Rocks Player supports smoother and better quality videos & movies.
                 </AboutText>
@@ -101,7 +101,7 @@ const AboutTitle = styled.h2`
 font-size: 25px;
 margin-top: 30px;
 color: red;
-word-spacing: 5px;
+word-spacing: 2px;
 font-weight: 900;
 @media(max-width: 768px){
     font-size:20px;
