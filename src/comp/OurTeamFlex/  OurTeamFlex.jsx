@@ -186,6 +186,7 @@ border-radius: 10px;
    /* margin-right: -40px; */
    object-fit: cover;
 }
+
 `
 const Text = styled.div`
 color: black;

@@ -153,7 +153,9 @@ border-radius: 4px;
 margin-left: 5%;
 }
 @media(max-width: 555px){
-    width: 80%;
+    /* width: 80%; */
+    min-width: 100px;
+    max-width: 200px;
     height: 130px;
     margin-left: 5%;
     margin-top: 15px;
