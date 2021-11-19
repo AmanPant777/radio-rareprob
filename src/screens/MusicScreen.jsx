@@ -36,14 +36,14 @@ You may easily browse any music. Also, you can create playlist of your favourite
                     <Text zeromargin={true}>  Set music as a ringtone of your choice.
                                 </Text>
                     <Text zeromargin={true}> Enable Sleep Timer.
- </Text>
+                    </Text>
                     <Text zeromargin={true}> Headset/Bluetooth support.
-</Text>
+                      </Text>
                     <Text zeromargin={true}> Music Library wide SEARCH
- </Text>
+                     </Text>
                     <Text zeromargin={true}> Custom Playlists, set albums, artists, genres, folders songs <br />
-to the playlists, show recent playlists.
- </Text>
+                       to the playlists, show recent playlists.
+                     </Text>
                     <Text zeromargin={true}> Settings to control Headset settings.</Text>
                     <Text zeromargin={true}> Powerful MP3 Cutter and Ringtone Cutter.</Text>
                     <Text zeromargin={true}> Easily customizable best themes- <br /> Light/Dark/Black/colour themes.</Text>
