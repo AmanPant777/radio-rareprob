@@ -50,6 +50,7 @@ const VideoContainer = styled.div`
 width: 100%;
 object-fit: contain;
 position: relative;
+
 `
 const HeaderContainer = styled.div`
 position: fixed;
@@ -65,7 +66,10 @@ height: 80px;
 const Video = styled.video`
 width: 100%;
 object-fit: contain;
-
+@media(max-width:568px){
+    min-height: 450px;
+    object-fit: cover;
+}
 `
 const FooterContainer = styled.div`
 position:absolute;
@@ -86,7 +90,10 @@ height: fit-content;
    top: 60%;
 }
 @media (max-width: 568px) {
-   top: 40%;
+   top: 70%;
+}
+@media (max-width: 488px) {
+   top: 70%;
 }
 `
 const SideViewContainer = styled.div`

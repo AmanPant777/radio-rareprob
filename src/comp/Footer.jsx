@@ -71,7 +71,7 @@ margin-top:10px ;
 }
 `
 const Icon = styled.img`
-width: 240px;
+width: 250px;
 object-fit: contain;
 @media (max-width: 768px){
     width: 150px;
@@ -80,7 +80,7 @@ object-fit: contain;
     width: 180px;
 }
 @media (max-width: 568px){
-    width: 120px;
+    width: 140px;
 }
 `
 // const ReadMoreContainer = styled.a`

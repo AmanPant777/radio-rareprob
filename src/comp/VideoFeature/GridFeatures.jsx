@@ -4,7 +4,7 @@ import Footer from '../Footer'
 const GridFeatures = () => {
     return (
         <Container>
-            <Title>Basic Aspects</Title>
+            {/* <Title>Basic Aspects</Title> */}
             <GridContainer>
                 <Grid >
                     <ImageContainer one={true}></ImageContainer>
@@ -19,7 +19,7 @@ const GridFeatures = () => {
                 <Grid>
                     <ImageContainer three={true}></ImageContainer>
                     <ImageTitle>Online Videos</ImageTitle>
-                    <ImageText>Search and play online trending videos with category like music, sports, news, commedy, technology etc.</ImageText>
+                    <ImageText>Search and play online trending videos with category like music, sports, news, comedy, technology and many more</ImageText>
                 </Grid>
                 <Grid>
                     <ImageContainer four={true}></ImageContainer>
@@ -79,6 +79,10 @@ margin-top: 20px;
 @media(max-width: 768px){
     height: 160px;
     margin: 0;
+}
+@media(max-width: 468px){
+    height: 160px;
+    margin-top: 10px;
 }
 `
 const GridContainer = styled.div`

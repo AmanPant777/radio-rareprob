@@ -19,7 +19,7 @@ folders and albums artists.</Text>
 You may easily browse any music. Also, you can create playlist of your favourite songs.
                         </Text>
                     <Text nomargintop={true} heading={true}>It supports various Audio Formats including <strong> MP3, MIDI, WAV, FLAC, AAC, APE etc</strong> </Text>
-                    <Heading>Features</Heading>
+                    <Heading>Basic Aspects</Heading>
                     <br />
                     <br />
                     <Text zeromargin={true}>
@@ -145,6 +145,10 @@ margin-top: ${props => props.nomargintop ? '10px' : '10px'};
 padding: 0 10px;
 line-height:1.5;
 margin-top: ${props => props.zeromargin && '5px'};
+}
+@media(max-width:488px){
+font-size: ${props=>props.heading?'14px':'10px'};
+
 }
 `
 const GridContainer = styled.div`

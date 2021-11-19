@@ -73,6 +73,11 @@ align-items: center;
     flex: 0.3;
     margin-right: 18px;
 }
+@media(max-width: 488px){
+    padding: 0;
+    flex: 0.3;
+    margin-right: 8px;
+}
 `
 const HomeContainer = styled.div`
 `
