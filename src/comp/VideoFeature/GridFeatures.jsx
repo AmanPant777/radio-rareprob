@@ -153,13 +153,13 @@ margin-left: -15px;
 }
 `
 const Image=styled.img`
-max-width: 220px;
+max-width: 250px;
 @media (max-width: 768px){
-    width: 150px;
+    width: 170px;
     margin-left: -20%;
 }
 @media (max-width: 1200px){
-    width: 180px;
+    width: 190px;
 }
 @media (max-width: 568px){
     width: 120px;
