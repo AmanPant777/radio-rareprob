@@ -34,7 +34,7 @@ const GridFeatures = () => {
                 <Grid>
                     <ImageContainer six={true}></ImageContainer>
                     <ImageTitle>More Features</ImageTitle>
-                    <ImageText>Dual Audio, subtitle search, PIP mode in video player playback speed, easy control on volume and brightness etc.</ImageText>
+                    <ImageText>Dual audio, subtitle search, PIP mode in the video player.Playback speed, easy control on volume and brightness.</ImageText>
                 </Grid>
             </GridContainer>
             <LinkContainer>
@@ -61,18 +61,18 @@ margin-top: 50px;
     margin-left: 20px;
 }
 `
-const Title = styled.div`
-color: rgba(0,0,0,0.7);
-font-size: 40px;
-font-weight: bold;
-text-align: center;
-padding: 20px;
-@media(max-width: 768px){
-    font-size:20px;
-    padding: 0;
-    padding-top: 6px;
-}
-`
+// const Title = styled.div`
+// color: rgba(0,0,0,0.7);
+// font-size: 40px;
+// font-weight: bold;
+// text-align: center;
+// padding: 20px;
+// @media(max-width: 768px){
+//     font-size:20px;
+//     padding: 0;
+//     padding-top: 6px;
+// }
+
 const Grid = styled.div`
 height: 250px;
 margin-top: 20px;

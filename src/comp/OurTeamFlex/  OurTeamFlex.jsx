@@ -224,7 +224,10 @@ justify-content: center;
 const ArrowLeftIcon=styled(ArrowLeft)`
 cursor: pointer;
 z-index: 100;
+margin-bottom: 50px;
 `
 const ArrowRightScroll=styled(ArrowRight)`
 cursor: pointer;
+margin-bottom: 50px;
+
 `

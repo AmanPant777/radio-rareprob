@@ -1,5 +1,5 @@
 import { setDoc, doc } from '@firebase/firestore';
-import { Instagram, Twitter } from '@material-ui/icons'
+import { Instagram, Twitter ,Facebook} from '@material-ui/icons'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { firestore } from '../../firebase';
@@ -34,7 +34,7 @@ const OurTeam = () => {
             <OurTeamTitle>Our Team</OurTeamTitle>
             <OurTeamText>"Teamwork is the ability to work together towards a common vision. The ability to direct individual accomplishments towards organizational objectives. It is the fuel that allows common people to gain uncommon results."</OurTeamText>
             <OurTeamFlex />
-            <FormContainer id="about">
+            <FormContainer >
                 <FormTitle>Write To Us</FormTitle>
                 <Form onSubmit={onSubmitHandler} id="formid">
                     <FlexForm>
@@ -69,6 +69,9 @@ const OurTeam = () => {
                         </Link>
                         <Link href=" https://mobile.twitter.com/rare_prob">
                             <Twitter />
+                        </Link>
+                        <Link href="https://www.facebook.com/rareprobsolution.sul.7">
+                            <Facebook />
                         </Link>
                     </Container1>
                 </FeedbackContainer>
@@ -209,9 +212,9 @@ const ImageContainer = styled.div`
 }
 `
 const ImageFeedback = styled.img`
-width: 60%;
+width: 55%;
 margin-top:40px;
-margin-left: 17%;
+margin-left: 19%;
 @media(max-width:768px){
     margin-top: -40px;
     margin-left: 13%;

@@ -51,7 +51,7 @@ const SideView = () => {
         </ActiveLink>
         <ActiveLink href="https://play.google.com/store/apps/details?id=com.asd.emicalculator">
           <Icon src="icons/calculator.png" calculator={true} />
-          <Title>Claculator </Title>
+          <Title>Calculator </Title>
         </ActiveLink>
         <ActiveLink href="https://play.google.com/store/apps/details?id=instagram.video.downloader.story.saver.instasaver">
           <Icon src="icons/insta_new_icon.png" />

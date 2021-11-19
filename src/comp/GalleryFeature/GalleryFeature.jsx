@@ -7,7 +7,7 @@ import KeyFeatures from '../../Other/KeyFeatures'
 const GalleryFeature = () => {
     return (
       <Container>
-          <AboutTitle first={true}>About an App</AboutTitle>
+          <AboutTitle first={true}>About an app</AboutTitle>
           <AboutText>Photo Editor and Collage Maker Gallery App with gallery-vault features is an excellent app for android devices supporting various features.</AboutText>
           <AboutTitle>Key Features</AboutTitle>
           {/* <GridContainer>
@@ -65,7 +65,7 @@ const GalleryFeature = () => {
           <Zoom>
           <Image src="images/artboard.png"/>
           </Zoom>
-         <Link href="https://play.google.com/store/apps/details?id=com.rocks.photosgallery">
+         <Link id="about"  href="https://play.google.com/store/apps/details?id=com.rocks.photosgallery">
             <Image1 src="icons/google.png"/>
          </Link>
           <OurTeamContainer >

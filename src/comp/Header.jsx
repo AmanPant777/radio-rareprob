@@ -27,11 +27,11 @@ const Header = ({ home, handleProduct, product }) => {
                 </HomeContainer>
                 <AboutContainer>
                     <a href="#about">
-                        <About >About</About>
+                        <About >About us</About>
                     </a>
                 </AboutContainer>
                 <ProductContainer onClick={() => handleProduct(!product)}>
-                    <Product>Product</Product>
+                    <Product>Apps</Product>
                 </ProductContainer>
                 {/* <IconContainer >
                 <Icon one={true}></Icon>
