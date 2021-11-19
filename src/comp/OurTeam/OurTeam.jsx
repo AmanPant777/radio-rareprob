@@ -57,7 +57,7 @@ const OurTeam = () => {
                 <ImageFeedback src="images/feedback.png" />
                 <FeedbackContainer>
                     <Container1 style={{ marginTop: 20 }}>
-                        Rareprob solutions private limited Shop 3 Galli No. 2, Omnagar Shahibadad, Gaziabad 201007
+                        Rareprob solutions private limited Shop 3 Galli No. 2, <br /> Omnagar Shahibadad, Gaziabad 201007
                     </Container1>
                     <Container1 one={true}>
                         asddev86@gmail.com
@@ -214,7 +214,7 @@ const ImageContainer = styled.div`
 const ImageFeedback = styled.img`
 width: 55%;
 margin-top:40px;
-margin-left: 19%;
+margin-left: 23%;
 @media(max-width:768px){
     margin-top: -40px;
     margin-left: 13%;
