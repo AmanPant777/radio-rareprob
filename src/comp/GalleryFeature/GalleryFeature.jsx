@@ -173,7 +173,7 @@ margin: auto;
 object-fit: contain;
 margin-left: 20%;
 height:600px;
-margin-top:30px;
+margin-top:80px;
 @media(max-width: 1200px){
     width: 100%;
     margin-left: 0;

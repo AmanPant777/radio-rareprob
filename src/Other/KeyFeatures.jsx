@@ -34,7 +34,7 @@ const KeyFeatures = () => {
                     <Image src='icons/color.svg'/>
                     <Text>
                         <Para> <strong> Edit Photos
-</strong></Para>
+                   </strong></Para>
                    <Para> Edit your photos by adding text on your photo with different styles and sizes  </Para>
                   <Para>Crop Photo freely with multi-aspect ratio. </Para>
                   <Para>Also, Rotate photo to perfect angle, horizontal and vertical according to your preference.</Para>
@@ -49,6 +49,27 @@ const KeyFeatures = () => {
                         <Para> Looking for story downloader?</Para>
                 <Para> Gallery supports story downloader. </Para>
                  <Para> Download your friend's WhatsApp stories and share them with other social media platforms too. </Para>
+                    </Text>
+                </Flex>
+           </FlexContainer>
+           <FlexContainer>
+                <Flex>
+                    <Image src='icons/insta.svg'/>
+                    <Text>
+                        <Para> <strong> Insta Downloader
+                   </strong></Para>
+                   <Para> Instagram posts can be downloaded easily through the Gallery app. </Para>
+                  <Para> Here users can download photos, reels and other videos easily within the seconds. </Para>
+                    </Text>
+                </Flex>
+                <Flex>
+                    <Image src='icons/web.svg'/>
+                    <Text>
+                        <Para><strong> Private Browser
+                        </strong>
+                        </Para>
+                        <Para> Gallery app supports a Private browser.</Para>
+                <Para> Users can browse photos, videos and other things easily just by copying or entering URL. </Para>
                     </Text>
                 </Flex>
            </FlexContainer>
