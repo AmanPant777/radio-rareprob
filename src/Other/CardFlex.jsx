@@ -47,7 +47,7 @@ const styles = muiBaseTheme => ({
   },
   heading: {
     fontWeight: "bold",
-   
+
   },
   subheading: {
     lineHeight: 1.8,
@@ -91,4 +91,3 @@ function CardFlex({ classes, imageUrl, title, text }) {
 }
 
 export const WrappedApp = withStyles(styles)(CardFlex);
-

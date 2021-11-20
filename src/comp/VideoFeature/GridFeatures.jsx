@@ -39,7 +39,7 @@ const GridFeatures = () => {
             </GridContainer>
             <LinkContainer>
                 <Link href="https://play.google.com/store/apps/details?id=com.rocks.music.videoplayer">
-                <Image src='icons/google.png'/>
+                <Image src='images/icons/google.png'/>
             </Link>
             </LinkContainer>
             
@@ -104,7 +104,7 @@ border-radius:10px;
 align-items: center;
 text-align: center;
 background-position:center;
-background-image: url(${props => props.one ? 'icons/video.svg' : props.two ? 'icons/music.svg' : props.three ? 'icons/online.svg' : props.four ? 'icons/photo.svg' : props.six ? 'icons/more.svg' : props.five ? 'icons/themes.svg' : ''});
+background-image: url(${props => props.one ? 'images/icons/video.svg' : props.two ? 'images/icons/music.svg' : props.three ? 'images/icons/online.svg' : props.four ? 'images/icons/photo.svg' : props.six ? 'images/icons/more.svg' : props.five ? 'images/icons/themes.svg' : ''});
 transition: transform .2s;
 &:hover{transform: scale(1.1)}; @media(max-width:768px){
   margin-top: 20px;

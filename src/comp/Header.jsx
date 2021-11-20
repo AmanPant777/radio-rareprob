@@ -18,7 +18,7 @@ const Header = ({ home, handleProduct, product }) => {
 
     return (
         <Container read={show}>
-            <Image src='/icons/logo-01.png' />
+            <Image src='/images/icons/logo-01.png' />
             <ContainerTitle>
                 <HomeContainer >
                     <a href={`#${home}`}>
@@ -85,7 +85,7 @@ const Home = styled.div`
 color: black;
 background-color:  rgba(255, 255, 255, 0.5);
 border-radius: 50px;
-padding: 5px; 
+padding: 5px;
 font-size:20px;
 width: 150px;
 cursor: pointer;
@@ -209,5 +209,3 @@ top: 20px;
 left:10px;
 `};
 ` */
-
-

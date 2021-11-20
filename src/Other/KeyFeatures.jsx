@@ -5,7 +5,7 @@ const KeyFeatures = () => {
         <Container>
            <FlexContainer>
                 <Flex>
-                    <Image src='icons/clrg.svg'/>
+                    <Image src='images/icons/clrg.svg'/>
                     <Text>
                       <Para> <strong> Collage Maker</strong></Para>
                 
@@ -18,7 +18,7 @@ const KeyFeatures = () => {
                     </Text>
                 </Flex>
                 <Flex>
-                    <Image src='icons/lock.svg'/>
+                    <Image src='images/icons/lock.svg'/>
                     <Text>
                         <Para> <strong> Gallery Vault feature for Photos and Videos</strong></Para>
                     <Para>  Create PIN for lock private photos </Para>
@@ -31,7 +31,7 @@ const KeyFeatures = () => {
            </FlexContainer>
            <FlexContainer>
                 <Flex>
-                    <Image src='icons/color.svg'/>
+                    <Image src='images/icons/color.svg'/>
                     <Text>
                         <Para> <strong> Edit Photos
                    </strong></Para>
@@ -41,7 +41,7 @@ const KeyFeatures = () => {
                     </Text>
                 </Flex>
                 <Flex>
-                    <Image src='icons/status.svg'/>
+                    <Image src='images/icons/status.svg'/>
                     <Text>
                         <Para><strong> Status downloader
                         </strong>
@@ -54,7 +54,7 @@ const KeyFeatures = () => {
            </FlexContainer>
            <FlexContainer>
                 <Flex>
-                    <Image src='icons/insta.svg'/>
+                    <Image src='images/icons/insta.svg'/>
                     <Text>
                         <Para> <strong> Insta Downloader
                    </strong></Para>
@@ -63,7 +63,7 @@ const KeyFeatures = () => {
                     </Text>
                 </Flex>
                 <Flex>
-                    <Image src='icons/web.svg'/>
+                    <Image src='images/icons/web.svg'/>
                     <Text>
                         <Para><strong> Private Browser
                         </strong>

@@ -74,7 +74,7 @@ const MusicFeatures = () => {
                 </Grid>
             </GridContainer>
             <Link href="https://play.google.com/store/apps/details?id=com.rocks.music">
-              <Image1 src="icons/google.png"/>
+              <Image1 src="images/icons/google.png"/>
             </Link>
             <Div >
             </Div>
