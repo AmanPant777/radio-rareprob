@@ -6,11 +6,11 @@ import KeyFeatures from '../../Other/KeyFeatures'
 
 const GalleryFeature = () => {
     return (
-      <Container>
-          <AboutTitle first={true}>About an app</AboutTitle>
-          <AboutText>Photo Editor and Collage Maker Gallery App with gallery-vault features is an excellent app for android devices supporting various features.</AboutText>
-          <AboutTitle>Key Features</AboutTitle>
-          {/* <GridContainer>
+        <Container>
+            <AboutTitle first={true}>About an app</AboutTitle>
+            <AboutText>Photo Editor and Collage Maker Gallery App with gallery-vault features is an excellent app for android devices supporting various features.</AboutText>
+            <AboutTitle>Key Features</AboutTitle>
+            {/* <GridContainer>
               <Grid>
                   <CircleContainer>
                       <Circle big={true} one={true}>
@@ -61,22 +61,22 @@ const GalleryFeature = () => {
           </GridContainer> */}
 
 
-          <KeyFeatures/>
-          <Zoom>
-          <Image src="images/artboard.png"/>
-          </Zoom>
-         <Link id="about"  href="https://play.google.com/store/apps/details?id=com.rocks.photosgallery">
-            <Image1 src="images/icons/google.png"/>
-         </Link>
-          <OurTeamContainer >
-            <OurTeam/>
-          </OurTeamContainer>
-      </Container>
+            <KeyFeatures />
+            <Zoom>
+                <Image src="images/artboard.png" />
+            </Zoom>
+            <Link id="about" href="https://play.google.com/store/apps/details?id=com.rocks.photosgallery">
+                <Image1 src="images/icons/google.png" />
+            </Link>
+            <OurTeamContainer >
+                <OurTeam />
+            </OurTeamContainer>
+        </Container>
     )
 }
 export default GalleryFeature
 
-const Container=styled.div`
+const Container = styled.div`
 width: 75%;
 margin-left: 7%;
 @media (max-width:768px){
@@ -84,18 +84,18 @@ margin-left: 7%;
     margin-left: 5%;
 }
 `
-const AboutTitle=styled.p`
+const AboutTitle = styled.p`
 color: red;
 padding: 20px 0;
 font-size:25px;
 font-weight:bold;
-margin-top: ${props=>props.first&&'20px'};
+margin-top: ${props => props.first && '20px'};
 @media(max-width: 768px){
     padding: 10px 0;
     font-size:13px;
 }
 `
-const AboutText=styled.p`
+const AboutText = styled.p`
 font-size:22px;
 width:80%;
 line-height:1.7;
@@ -167,7 +167,7 @@ line-height:1.2;
 // }
 // `   
 
-const Image=styled.img`
+const Image = styled.img`
 width: 60%;
 margin: auto;
 object-fit: contain;
@@ -189,7 +189,7 @@ margin-top:80px;
     height: 200px;
 }
 `
-const OurTeamContainer=styled.div`
+const OurTeamContainer = styled.div`
 width: 98vw;
 height: 100%;
 margin-left: -15%;
@@ -201,7 +201,7 @@ background-color:#e9d6d616;
 margin-top: 0px;
 }
 `
-const Link=styled.a`
+const Link = styled.a`
 cursor: pointer;
 display: inline-block;
 max-width: 200px;
@@ -211,18 +211,18 @@ margin-top: 40px;
    margin-top: 0;
 }
 `
-const Image1=styled.img`
-max-width: 220px;
+const Image1 = styled.img`
+max-width: 280px;
 @media (max-width: 768px){
-    width: 150px;
+    width: 180px;
     margin-left: -5%;
 }
 @media (max-width: 1200px){
-    width: 180px;
+    width: 200px;
     margin-top: 40px;
 }
 @media (max-width: 568px){
-    width: 120px;
+    width: 150px;
     margin-top: 20px;
     margin-left: -20%;
 }

@@ -1,4 +1,4 @@
-import { ArrowLeft,ArrowRight } from '@material-ui/icons';
+import { ArrowLeft, ArrowRight } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
 import { WrappedApp } from '../../Other/CardFlex'
@@ -21,11 +21,11 @@ const OurTeamFlex = () => {
                 <FlexContainer1 id="scroll1">
                     <Flex1>
                         <Image src='images/kajal.jpg' />
-                       
+
                         <Text>Kajal Goyal </Text>
                         <Textbelow>Software Engineer (QA)</Textbelow>
-                       
-                       
+
+
                     </Flex1>
                     <Flex1>
                         <Image src='images/swatikarnwal.png' />
@@ -205,7 +205,7 @@ const ScrollContainer = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-margin-left: -50px;
+margin-left: -30px;
 margin-top: 50px;
 @media(max-width:768px){
     margin-left: -30px;
@@ -221,12 +221,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 `
-const ArrowLeftIcon=styled(ArrowLeft)`
+const ArrowLeftIcon = styled(ArrowLeft)`
 cursor: pointer;
 z-index: 100;
 margin-bottom: 50px;
 `
-const ArrowRightScroll=styled(ArrowRight)`
+const ArrowRightScroll = styled(ArrowRight)`
 cursor: pointer;
 margin-bottom: 50px;
 

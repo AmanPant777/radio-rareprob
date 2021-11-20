@@ -5,21 +5,21 @@ const VideoFeature = () => {
     return (
         <Container>
             <FeatureContainer>
-                 <FeatureTitle>Multi-featured App</FeatureTitle>
-                 <FeatureText>Music, Photos, Videos and Online Trending videos are accessible.</FeatureText>
-                 <ImageContainer>
-                     <Image src="images/picture.png"/>
-                 {/* <FeatureImage src='/images/mobile1.png' middle={true}/>
+                <FeatureTitle>Multi-featured App</FeatureTitle>
+                <FeatureText>Music, Photos, Videos and Online Trending videos are accessible.</FeatureText>
+                <ImageContainer>
+                    <Image src="images/picture.png" />
+                    {/* <FeatureImage src='/images/mobile1.png' middle={true}/>
                  <FeatureImage src="/images/mobile2.png" right={true}/>
                  <FeatureImage src="/images/mobile3.png" left={true}/> */}
-                 </ImageContainer>
+                </ImageContainer>
             </FeatureContainer>
-            <GridFeatures/>
+            <GridFeatures />
         </Container>
     )
 }
 export default VideoFeature
-const Container=styled.div`
+const Container = styled.div`
 width: 100%;
 height: 100%;
 margin-top: 60px;
@@ -32,12 +32,12 @@ margin-top: 60px;
     margin-top: 30px;
 }
 `
-const FeatureContainer=styled.div`
+const FeatureContainer = styled.div`
 @media(max-width:488px){
     margin-left: 20px;
 }
 `
-const FeatureTitle=styled.div`
+const FeatureTitle = styled.div`
 text-align: center;
 font-size:30px;
 color: rgba(0,0,0,0.8);
@@ -52,7 +52,7 @@ padding:20px;
     padding:0;
 }
 `
-const FeatureText=styled.div`
+const FeatureText = styled.div`
 text-align: center;
 font-size:20px;
 color: rgba(0,0,0,0.9);
@@ -82,7 +82,7 @@ color: rgba(0,0,0,0.9);
 // width: ${props=>props.middle&&` 110px`};
 // }
 // `
-const ImageContainer=styled.div`
+const ImageContainer = styled.div`
 position: relative;
 width:60%;
 margin: auto;
@@ -91,7 +91,7 @@ margin: auto;
     margin-left: 10%;
 }
 `
-const Image=styled.img`
+const Image = styled.img`
 object-fit: contain;
 width: 90%;
 margin-top: 40px;

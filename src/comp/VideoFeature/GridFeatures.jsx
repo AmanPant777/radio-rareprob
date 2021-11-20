@@ -39,14 +39,14 @@ const GridFeatures = () => {
             </GridContainer>
             <LinkContainer>
                 <Link href="https://play.google.com/store/apps/details?id=com.rocks.music.videoplayer">
-                <Image src='images/icons/google.png'/>
-            </Link>
+                    <Image src='images/icons/google.png' />
+                </Link>
             </LinkContainer>
-            
+
             <div style={{ height: '100px' }}>
 
             </div>
-            
+
             <Footer color={true} />
         </Container>
     )
@@ -140,7 +140,7 @@ color: rgba(0,0,0,0.9);
     width: 97%;
 }
 `
-const Link=styled.a`
+const Link = styled.a`
 cursor: pointer;
 display: inline-block;
 max-width: 200px;
@@ -152,21 +152,21 @@ margin-left: -15px;
    margin-left: 17px;
 }
 `
-const Image=styled.img`
-max-width: 250px;
+const Image = styled.img`
+max-width: 280px;
 @media (max-width: 768px){
-    width: 170px;
+    width: 180px;
     margin-left: -20%;
 }
 @media (max-width: 1200px){
-    width: 190px;
+    width: 200px;
 }
 @media (max-width: 568px){
-    width: 120px;
+    width: 150px;
     
 }
 `
-const LinkContainer=styled.div`
+const LinkContainer = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;

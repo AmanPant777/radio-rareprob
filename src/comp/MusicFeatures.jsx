@@ -18,8 +18,8 @@ const MusicFeatures = () => {
                     <Title>Discover</Title>
                     <ImageContainer>
                         <Image src='images/Discoverimage.jpg' />
-                        <Icon src='images/disc.png' discover={true}/>
-                        
+                        <Icon src='images/disc.png' discover={true} />
+
                     </ImageContainer>
                     <Text>If you're fond of trending music then Rocks player is the one for you.
                         You may find trending songs in this app so that you won't be able to miss any trending music.
@@ -74,7 +74,7 @@ const MusicFeatures = () => {
                 </Grid>
             </GridContainer>
             <Link href="https://play.google.com/store/apps/details?id=com.rocks.music">
-              <Image1 src="images/icons/google.png"/>
+                <Image1 src="images/icons/google.png" />
             </Link>
             <Div >
             </Div>
@@ -154,7 +154,7 @@ margin-left: 5%;
 }
 @media(max-width: 555px){
     /* width: 80%; */
-    min-width: 100px;
+    min-width: 120px;
     max-width: 200px;
     height: 130px;
     margin-left: 5%;
@@ -186,7 +186,7 @@ const Icon = styled.img`
 width: 60px;
 top: 8%;
 left: 35%;
-max-width: ${props=>props.discover&&`
+max-width: ${props => props.discover && `
     40px
 `};
 
@@ -195,7 +195,7 @@ position: absolute;
     width: 25px;
     top: 20%;
     left: 35%;
-    max-width: ${props=>props.discover&&`
+    max-width: ${props => props.discover && `
     20px
 `};
 }
@@ -224,7 +224,7 @@ height: 100px;
     height: 70px;
 }
 `
-const Link=styled.a`
+const Link = styled.a`
 cursor: pointer;
 display: inline-block;
 max-width: 200px;
@@ -234,19 +234,19 @@ margin-top: 50px;
    margin-top: 10px;
 }
 `
-const Image1=styled.img`
-max-width: 220px;
+const Image1 = styled.img`
+max-width: 280px;
 margin-top: 40px;
 @media (max-width: 768px){
-    width: 150px;
+    width: 180px;
     margin-left: -20%;
 }
 @media (max-width: 1200px){
-    width: 180px;
+    width: 200px;
     margin-top: 40px;
 }
 @media (max-width: 568px){
-    width: 120px;
+    width: 150px;
     margin-top: 20px;
 }
 `

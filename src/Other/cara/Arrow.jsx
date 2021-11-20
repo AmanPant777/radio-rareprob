@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Arrow = ({ direction, clickFunction, glyph }) => (
     <div
-        style={{ fontSize: '20px', cursor: 'pointer' ,color:'rgba(0,0,0,0.3)'}}
+        style={{ fontSize: '20px', cursor: 'pointer', color: 'rgba(0,0,0,0.3)' }}
         className={`slide-arrow ${direction}`}
         onClick={clickFunction}
     >

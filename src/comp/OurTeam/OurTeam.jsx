@@ -1,5 +1,5 @@
 import { setDoc, doc } from '@firebase/firestore';
-import { Instagram, Twitter ,Facebook} from '@material-ui/icons'
+import { Instagram, Twitter, Facebook } from '@material-ui/icons'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { firestore } from '../../firebase';
@@ -116,13 +116,14 @@ margin: auto;
 
 const FormContainer = styled.div`
 margin-top: 100px;
-width: 80%;
+width: 70%;
 margin:100px auto;
 padding: 20px;
 border-radius: 40px;
 background-color: rgba(255,255,255,1);
 @media(max-width: 768px){
     margin-top:0;
+    width: 80%;
 }
 `
 const FormTitle = styled.div`
@@ -191,7 +192,7 @@ font-size:20px;
 border-radius:40px;
 font-weight: bold;
 transition: transform .2s;
-&:hover{transform: ${props=>props.succesfull?'':' scale(1.1)'}};
+&:hover{transform: ${props => props.succesfull ? '' : ' scale(1.1)'}};
 @media(max-width: 768px){
     top: 40%;
     width:5em;
@@ -212,9 +213,9 @@ const ImageContainer = styled.div`
 }
 `
 const ImageFeedback = styled.img`
-width: 55%;
-margin-top:40px;
-margin-left: 23%;
+width: 50%;
+margin-top:10px;
+margin-left: 30%;
 @media(max-width:768px){
     margin-top: -40px;
     margin-left: 13%;
@@ -231,7 +232,7 @@ align-items: flex-start;
 height: 200px;
 width: 65%;
 margin:auto;
-margin-left: 15%;
+margin-left: 20%;
 @media(max-width: 768px){
     flex-direction: column;
     align-items: center;
@@ -247,7 +248,7 @@ margin-left: 15%;
 `
 const Container1 = styled.div`
 flex: 0.4;
-font-size: 14px;
+font-size: 15px;
 flex:${props => props.makeflex && '0.3'} ;
 text-align: center;
 display: ${props => props.makeflex && 'flex'};
