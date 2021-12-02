@@ -10,13 +10,17 @@ import Footer from './Footer'
 const Home = () => {
     const [product, setProduct] = useState(true)
     const home = "home"
+    const [girlImage,setGirlImage]=useState(true)
     return (
         <Container>
             <HeaderContainer >
                 <Header home={home} handleProduct={setProduct} product={product} />
             </HeaderContainer>
             <VideoContainer id={home}>
-                <Video autoPlay="autoPlay" playsinline autoplay muted loop >
+                {girlImage&&(
+                  <VideoImage src="/images/Background.jpg"/>
+                )}
+                <Video onPlay={()=>setGirlImage(false)} autoPlay="autoPlay" playsinline autoplay muted loop >
                     <source src={videoplay} type="video/mp4" />
                 </Video>
                 <FooterContainer>
@@ -122,4 +126,11 @@ margin-top: -40px;
 `
 
 const VideoPageContainer = styled.div`
+`
+const VideoImage=styled.img`
+position: absolute;
+width: 100%;
+@media(max-width:568px){
+    min-height: 450px;
+}
 `

@@ -65,7 +65,7 @@ const GalleryFeature = () => {
             <Zoom>
                 <Image src="images/artboard.png" />
             </Zoom>
-            <Link id="about" href="https://play.google.com/store/apps/details?id=com.rocks.photosgallery">
+            <Link id="about" target="_blank" href="https://play.google.com/store/apps/details?id=com.rocks.photosgallery">
                 <Image1 src="images/icons/google.png" />
             </Link>
             <OurTeamContainer >

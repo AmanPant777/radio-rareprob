@@ -80,7 +80,7 @@ width: 100px;
     margin-top:-10px;
 }
 `
-const Title = styled.div`
+const Title = styled.h1`
 font-size:40px;
 color: red;
 padding: 20px;

@@ -44,32 +44,32 @@ const SideView = () => {
             </ActiveLink>
           </li>
         </Scrollspy>
-        <ActiveLink href="https://play.google.com/store/apps/details?id=mp3converter.videotomp3.ringtonemaker">
+        <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=mp3converter.videotomp3.ringtonemaker">
           <Icon src="images/icons/mp3.png" />
           <Title> MP3 Converter</Title>
 
         </ActiveLink>
-        <ActiveLink href="https://play.google.com/store/apps/details?id=com.asd.emicalculator">
+        <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=com.asd.emicalculator">
           <Icon src="images/icons/calculator.png" calculator={true} />
           <Title>Calculator </Title>
         </ActiveLink>
-        <ActiveLink href="https://play.google.com/store/apps/details?id=instagram.video.downloader.story.saver.instasaver">
+        <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=instagram.video.downloader.story.saver.instasaver">
           <Icon src="images/icons/insta_new_icon.png" />
           <Title>Video Downloader</Title>
         </ActiveLink>
-        <ActiveLink href="https://play.google.com/store/apps/details?id=radio.fm.mytunner.gaana.liveradio.radiostation.pocketfm">
+        <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=radio.fm.mytunner.gaana.liveradio.radiostation.pocketfm">
           <Icon src="images/icons/radio.png" />
           <Title>Radio Fm</Title>
         </ActiveLink>
-        <ActiveLink href="https://play.google.com/store/apps/details?id=com.asddev.statussaver">
+        <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=com.asddev.statussaver">
           <Icon src="images/icons/status_saver.png" />
           <Title>Status Saver</Title>
         </ActiveLink>
-        <ActiveLink href="https://play.google.com/store/apps/details?id=games.find.diff.gamma">
+        <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=games.find.diff.gamma">
           <Icon src="images/icons/game.png" />
           <Title>Game</Title>
         </ActiveLink>
-        <ActiveLink href="https://play.google.com/store/apps/details?id=shareit.sharefiles.filetransfer.easyshare.copydata">
+        <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=shareit.sharefiles.filetransfer.easyshare.copydata">
           <Icon src="images/icons/share.png" />
           <Title>ShareOn</Title>
         </ActiveLink>

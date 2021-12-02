@@ -73,7 +73,7 @@ const MusicFeatures = () => {
                         Rocks Player is all set with the Ringtone maker feature so that you can  trim the music and set it as ringtone accordingly.</Text>
                 </Grid>
             </GridContainer>
-            <Link href="https://play.google.com/store/apps/details?id=com.rocks.music">
+            <Link target="_blank" href="https://play.google.com/store/apps/details?id=com.rocks.music">
                 <Image1 src="images/icons/google.png" />
             </Link>
             <Div >
