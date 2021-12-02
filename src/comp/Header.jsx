@@ -18,7 +18,9 @@ const Header = ({ home, handleProduct, product }) => {
 
     return (
         <Container read={show}>
+            <a href="#home">
             <Image alt="rareprob" src='images/icons/logo-01.png' />
+            </a>
             <ContainerTitle>
                 <HomeContainer >
                     <a href={`#${home}`}>

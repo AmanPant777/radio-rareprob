@@ -19,9 +19,7 @@ folders and albums artists.</Text>
 You may easily browse any music. Also, you can create playlist of your favourite songs.
                         </Text>
                     <Text nomargintop={true} heading={true}>It supports various Audio Formats including <strong> MP3, MIDI, WAV, FLAC, AAC, APE etc</strong> </Text>
-                    <Heading>Basic Aspects</Heading>
-                    <br />
-                    <br />
+                    <Heading basic={true}>Basic Aspects</Heading>
                     <Text zeromargin={true}>
                     Supports music and audio formats, <br /> like <strong> MP3, MIDI, WAV, FLAC, AAC, APE </strong>  etc.
                         </Text>
@@ -125,10 +123,14 @@ font-size:25px;
 font-weight:bold;
 color: #D51989;
 margin-top: 20px;
+margin-bottom: ${props=>props.basic&&`20px`};
 @media(max-width: 768px){
     padding: 0 10px;
     font-size: 20px;
     margin-top: 10px;
+    margin-top: ${props=>props.basic&&`20px`};
+    font-size: ${props=>props.basic&&`18px`};
+    margin-bottom: ${props=>props.basic&&`15px`};
 }
 `
 const Text = styled.p`
