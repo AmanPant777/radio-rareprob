@@ -8,8 +8,8 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title>Equalizer</Title>
                     <ImageContainer>
-                        <Image src='images/Equalizerimage.jpg' />
-                        <Icon src='images/equalizer.png' />
+                        <Image alt="equalizer" src='images/Equalizerimage.jpg' />
+                        <Icon alt="equalizer" src='images/equalizer.png' />
                     </ImageContainer>
                     <Text >Not every person has the same sound quality taste. right?
                         So Here Rocks Player is all set with the Equalizer feature and it will improve the sound quality of your android device with the <strong>Bass Boost, Virtualizer, and Equalizer.</strong> </Text>
@@ -17,8 +17,8 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title>Discover</Title>
                     <ImageContainer>
-                        <Image src='images/Discoverimage.jpg' />
-                        <Icon src='images/disc.png' discover={true} />
+                        <Image alt="discover" src='images/Discoverimage.jpg' />
+                        <Icon alt="discover" src='images/disc.png' discover={true} />
 
                     </ImageContainer>
                     <Text>If you're fond of trending music then Rocks player is the one for you.
@@ -28,8 +28,8 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title>Themes</Title>
                     <ImageContainer>
-                        <Image src='images/themesmenia.jpg' />
-                        <Icon src='images/ICONtheme.png' />
+                        <Image alt="themes" src='images/themesmenia.jpg' />
+                        <Icon alt="themes" src='images/ICONtheme.png' />
                     </ImageContainer>
                     <Text>Somewhere we all seek variation. isn't it?
                         That is why Rocks Player supports captivating and magical themes so that you can switch to different themes on this app according to your preference.</Text>
@@ -37,8 +37,8 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title one={true}>Video to mp3 converter</Title>
                     <ImageContainer>
-                        <Image src='images/videotomp3.jpg' />
-                        <Icon src='images/ICONvideotomp3.png' />
+                        <Image alt="video to mp3" src='images/videotomp3.jpg' />
+                        <Icon alt="video to mp3" src='images/ICONvideotomp3.png' />
                     </ImageContainer>
                     <Text>We believe, Not everyone prefers to watch videos while listening to songs.
                         So Rocks Player supports mp3 converter.
@@ -47,8 +47,8 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title>Sleep Timer</Title>
                     <ImageContainer>
-                        <Image src='images/SleepTimer.jpg' />
-                        <Icon src='images/ICONsleep time.png' />
+                        <Image alt="sleep timer" src='images/SleepTimer.jpg' />
+                        <Icon alt="sleep timer" src='images/ICONsleep time.png' />
                     </ImageContainer>
                     <Text> Listening to music after a tiring day is indeed a relaxing thing.
                         But we usually fall asleep. right?
@@ -57,8 +57,8 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title>Playlists</Title>
                     <ImageContainer>
-                        <Image src='images/Playlist.jpg' />
-                        <Icon src='images/ICONplaylist.png' />
+                        <Image alt="playlist" src='images/Playlist.jpg' />
+                        <Icon alt="playlist" src='images/ICONplaylist.png' />
                     </ImageContainer>
                     <Text>Creating a playlist of favorite songs is fascinating.
                         Rocks player allows creating a playlist so that you can play your favorite playlist wherever you are without searching for it.</Text>
@@ -66,15 +66,15 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title>Ringtone</Title>
                     <ImageContainer>
-                        <Image src='images/ringtonimage.jpg' />
-                        <Icon src='images/ringtone.png' />
+                        <Image alt="Ringtone" src='images/ringtonimage.jpg' />
+                        <Icon alt="Ringtone" src='images/ringtone.png' />
                     </ImageContainer>
                     <Text>Want to make your favorite song as a ringtone?
                         Rocks Player is all set with the Ringtone maker feature so that you can  trim the music and set it as ringtone accordingly.</Text>
                 </Grid>
             </GridContainer>
             <Link target="_blank" href="https://play.google.com/store/apps/details?id=com.rocks.music">
-                <Image1 src="images/icons/google.png" />
+                <Image1 alt="google" src="images/icons/google.png" />
             </Link>
             <Div >
             </Div>

@@ -69,6 +69,7 @@ function CardFlex({ classes, imageUrl, title, text }) {
           image={
             imageUrl
           }
+          
         />
         <CardContent className={classes.content}>
           <Typography

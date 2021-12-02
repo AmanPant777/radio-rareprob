@@ -18,9 +18,9 @@ const Home = () => {
             </HeaderContainer>
             <VideoContainer id={home}>
                 {girlImage&&(
-                  <VideoImage src="/images/Background.jpg"/>
+                  <VideoImage alt="videoimage" src="/images/Background.jpg"/>
                 )}
-                <Video onPlay={()=>setGirlImage(false)} autoPlay="autoPlay" playsinline autoplay muted loop >
+                <Video  onPlay={()=>setGirlImage(false)} autoPlay="autoPlay" playsinline autoplay muted loop >
                     <source src={videoplay} type="video/mp4" />
                 </Video>
                 <FooterContainer>

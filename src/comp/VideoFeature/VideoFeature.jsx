@@ -8,7 +8,7 @@ const VideoFeature = () => {
                 <FeatureTitle>Multi-featured App</FeatureTitle>
                 <FeatureText>Music, Photos, Videos and Online Trending videos are accessible.</FeatureText>
                 <ImageContainer>
-                    <Image src="images/picture.png" />
+                    <Image alt="All Features" src="images/picture.png" />
                     {/* <FeatureImage src='/images/mobile1.png' middle={true}/>
                  <FeatureImage src="/images/mobile2.png" right={true}/>
                  <FeatureImage src="/images/mobile3.png" left={true}/> */}

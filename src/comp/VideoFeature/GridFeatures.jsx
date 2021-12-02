@@ -39,7 +39,7 @@ const GridFeatures = () => {
             </GridContainer>
             <LinkContainer>
                 <Link target="_blank" href="https://play.google.com/store/apps/details?id=com.rocks.music.videoplayer">
-                    <Image src='images/icons/google.png' />
+                    <Image alt="google" src='images/icons/google.png' />
                 </Link>
             </LinkContainer>
 

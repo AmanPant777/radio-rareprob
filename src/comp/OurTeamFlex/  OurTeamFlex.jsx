@@ -20,7 +20,7 @@ const OurTeamFlex = () => {
                 <ArrowLeftIcon onClick={() => scrollHandlerLeft("scroll1")} />
                 <FlexContainer1 id="scroll1">
                     <Flex1>
-                        <Image src='images/kajal.jpg' />
+                        <Image alt="kajal" src='images/kajal.jpg' />
 
                         <Text>Kajal Goyal </Text>
                         <Textbelow>Software Engineer (QA)</Textbelow>
@@ -28,57 +28,57 @@ const OurTeamFlex = () => {
 
                     </Flex1>
                     <Flex1>
-                        <Image src='images/swatikarnwal.png' />
+                        <Image alt="swati" src='images/swatikarnwal.png' />
                         <Text>Swati Karnwal </Text>
                         <Textbelow>Software Engineer (QA)</Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image src='images/arun.jpg' />
+                        <Image alt="arun" src='images/arun.jpg' />
                         <Text> Arun Saini</Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image src='images/rishi.jpg' />
+                        <Image alt="rishi" src='images/rishi.jpg' />
                         <Text>Rishikesh Sharma</Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image src='images/aman.jpg' />
+                        <Image alt="aman" src='images/aman.jpg' />
                         <Text>Aman Pant </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image src='images/vibhur.jpg' />
+                        <Image alt="vibhur" src='images/vibhur.jpg' />
                         <Text>Vibhor Jain </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image src='images/robin.jpg' />
+                        <Image alt="robin" src='images/robin.jpg' />
                         <Text>Robin Sharma </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image src='images/nikhilrana.png' />
+                        <Image alt="nikhil" src='images/nikhilrana.png' />
                         <Text>Nikhil Rana </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image src='images/akshay.jpg' />
+                        <Image alt="akshay" src='images/akshay.jpg' />
                         <Text>Akshay Jain </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image src='images/mansi.png' />
+                        <Image alt="mansi" src='images/mansi.png' />
                         <Text>Mansi </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image src='images/sanidhyasingh.png' />
+                        <Image alt="sanidhya" src='images/sanidhyasingh.png' />
                         <Text>Sanidhya Singh </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image src='images/rajdeepnahar.png' />
+                        <Image alt="rajdeep" src='images/rajdeepnahar.png' />
                         <Text>Rajdeep Nahar </Text>
                         <Textbelow> Graphic Designer </Textbelow>
                     </Flex1>

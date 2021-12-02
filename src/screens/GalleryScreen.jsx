@@ -10,7 +10,7 @@ const GalleryScreen = () => {
                       <source src={pexels} type="video/mp4"/>
                   </Video>
                   <IconContainer>
-                      <Icon src="images/icons/gallery.png"/>
+                      <Icon alt="gallery" src="images/icons/gallery.png"/>
                       <IconTitle>Gallery</IconTitle>
                   </IconContainer>
        </VideoContainer>

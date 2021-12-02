@@ -54,7 +54,7 @@ const OurTeam = () => {
                 </Form>
             </FormContainer>
             <ImageContainer>
-                <ImageFeedback src="images/feedback.png" />
+                <ImageFeedback alt="feedback" src="images/feedback.png" />
                 <FeedbackContainer>
                     <Container1 style={{ marginTop: 20 }}>
                         Rareprob solutions private limited Shop 3 Galli No. 2, <br /> Omnagar Shahibadad, Gaziabad 201007

@@ -25,57 +25,57 @@ const SideView = () => {
         <Scrollspy items={['section-1', 'section-2', 'section-3']} currentClassName="is-current" offset={-50}>
           <li>
             <ActiveLink href="#section-1" >
-              <Icon src="images/icons/videoplayer.png" />
+              <Icon alt="videoplayer" src="images/icons/videoplayer.png" />
               <Title>Video Player Pro</Title>
             </ActiveLink>
 
           </li>
           <li>
             <ActiveLink href="#section-2" >
-              <Icon src="images/icons/musicplayer.png" />
+              <Icon alt="musicplayer" src="images/icons/musicplayer.png" />
               <Title>Music Player</Title>
             </ActiveLink>
 
           </li>
           <li>
             <ActiveLink href="#section-3">
-              <Icon src="images/icons/gallery.png" big={true} />
+              <Icon alt="gallery" src="images/icons/gallery.png" big={true} />
               <Title>Gallery</Title>
             </ActiveLink>
           </li>
         </Scrollspy>
         <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=mp3converter.videotomp3.ringtonemaker">
-          <Icon src="images/icons/mp3.png" />
+          <Icon alt="mp3 converter" src="images/icons/mp3.png" />
           <Title> MP3 Converter</Title>
 
         </ActiveLink>
         <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=com.asd.emicalculator">
-          <Icon src="images/icons/calculator.png" calculator={true} />
+          <Icon alt="calculator" src="images/icons/calculator.png" calculator={true} />
           <Title>Calculator </Title>
         </ActiveLink>
         <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=instagram.video.downloader.story.saver.instasaver">
-          <Icon src="images/icons/insta_new_icon.png" />
+          <Icon alt="video download" src="images/icons/insta_new_icon.png" />
           <Title>Video Downloader</Title>
         </ActiveLink>
         <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=radio.fm.mytunner.gaana.liveradio.radiostation.pocketfm">
-          <Icon src="images/icons/radio.png" />
+          <Icon alt="radio fm" src="images/icons/radio.png" />
           <Title>Radio Fm</Title>
         </ActiveLink>
         <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=com.asddev.statussaver">
-          <Icon src="images/icons/status_saver.png" />
+          <Icon alt="status saver" src="images/icons/status_saver.png" />
           <Title>Status Saver</Title>
         </ActiveLink>
         <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=games.find.diff.gamma">
-          <Icon src="images/icons/game.png" />
+          <Icon alt="game" src="images/icons/game.png" />
           <Title>Game</Title>
         </ActiveLink>
         <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=shareit.sharefiles.filetransfer.easyshare.copydata">
-          <Icon src="images/icons/share.png" />
+          <Icon alt="shareon" src="images/icons/share.png" />
           <Title>ShareOn</Title>
         </ActiveLink>
       </IconContainer>
     </Container>
-    <Jump src="images/icons/arrow7.png" alt="" />
+    <Jump  src="images/icons/arrow7.png" alt="jump" />
   </>
   )
 }

@@ -6,7 +6,7 @@ const VideoScreen = () => {
         <Container >
             <AboveContainer>
                 <HeadingContainer>
-                <Image src='images/icons/videoplayer.png' />
+                <Image alt="videoplayer" src='images/icons/videoplayer.png' />
                 <Title>Video Player Pro</Title>
                 </HeadingContainer>
                 <AboutTitle>About an app</AboutTitle>
@@ -17,7 +17,7 @@ const VideoScreen = () => {
                 <HeadingContainer two={true}>
                 <KeyGrayTitle>Smooth Gesture</KeyGrayTitle>
                 <Text>Gesture control for Volume, Brightness, Playback speed and Forward</Text>
-                <Image1 src="images/kids.png"/>
+                <Image1 alt="features" src="images/kids.png"/>
                 </HeadingContainer>
             </AboveContainer>
             {/* <Video autoPlay="autoPlay" playsinline autoplay muted loop >
@@ -27,12 +27,12 @@ const VideoScreen = () => {
                 <PictureContainer>
                     <PictureTitle>Picture-in-picture mode</PictureTitle>
                     <PictureText>View video in pip mode without block screen.</PictureText>
-                    <PictureImage src='/images/pop.png' one={true}/>
+                    <PictureImage alt="pip" src='/images/pop.png' one={true}/>
                 </PictureContainer>
                 <PictureContainer>
                     <PictureTitle>Online Videos</PictureTitle>
                     <PictureText>Search and play online trending videos with category like music, sports, news, comedy, technology and many more</PictureText>
-                    <PictureImage src='/images/online.png' />
+                    <PictureImage alt="pip" src='/images/online.png' />
                 </PictureContainer>
             </PictureInPictureContainer>
             <VideoFeatureContainer>

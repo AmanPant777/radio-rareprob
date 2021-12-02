@@ -63,10 +63,10 @@ const GalleryFeature = () => {
 
             <KeyFeatures />
             <Zoom>
-                <Image src="images/artboard.png" />
+                <Image alt="artboard" src="images/artboard.png" />
             </Zoom>
             <Link id="about" target="_blank" href="https://play.google.com/store/apps/details?id=com.rocks.photosgallery">
-                <Image1 src="images/icons/google.png" />
+                <Image1 alt="google" src="images/icons/google.png" />
             </Link>
             <OurTeamContainer >
                 <OurTeam />

@@ -12,7 +12,7 @@ const Footer = ({  text, icon, }) => {
                 {
                     icon && (<IconContainer>
                         <Link target="_blank" href="https://play.google.com/store/apps/dev?id=6259831402052261779">
-                            <Icon src='images/icons/google.png' />
+                            <Icon alt="google" src='images/icons/google.png' />
                         </Link>
                         {/* <ReadMoreContainer href="#section-1">
                             <ReadMore read>read more</ReadMore>
