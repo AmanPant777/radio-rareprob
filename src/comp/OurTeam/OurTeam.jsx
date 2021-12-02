@@ -64,13 +64,13 @@ const OurTeam = () => {
                         <p >2019, All Rights Reserved</p>
                     </Container1>
                     <Container1 makeflex={true} one={true}>
-                        Follow Us: <Link href="https://www.instagram.com/rareprob_/?utm_medium=copy_link">
+                        Follow Us: <Link target="_blank" href="https://www.instagram.com/rareprob_/?utm_medium=copy_link">
                             <Instagram />
                         </Link>
-                        <Link href=" https://mobile.twitter.com/rare_prob">
+                        <Link target="_blank" href=" https://mobile.twitter.com/rare_prob">
                             <Twitter />
                         </Link>
-                        <Link href="https://www.facebook.com/rareprobsolution.sul.7">
+                        <Link target="_blank" href="https://www.facebook.com/rareprobsolution.sul.7">
                             <Facebook />
                         </Link>
                     </Container1>
