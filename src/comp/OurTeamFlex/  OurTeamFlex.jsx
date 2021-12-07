@@ -224,6 +224,8 @@ margin-top: 50px;
 const Textbelow = styled.p`
 color: gray;
 font-size: 10px;
+margin-top: 5px;
+font-weight: bold;
 `
 const WrappedContainer = styled.div`
 display: flex;

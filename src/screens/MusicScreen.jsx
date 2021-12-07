@@ -11,7 +11,7 @@ const MusicScreen = () => {
                     <Icon alt="musicplayer" src='images/icons/musicplayer.png' />
                 </TitleContainer>
                 <AboutContainer>
-                    <Heading>About an app</Heading>
+                    <Heading>About App</Heading>
                     <Text heading={true}>Browse and play your music by albums, artists, genres, songs, playlists,
 folders and albums artists.</Text>
                     <Text nomargintop={true} heading={true}>

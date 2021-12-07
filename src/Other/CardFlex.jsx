@@ -5,6 +5,31 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
+const style = {
+  padding: '12px',
+  // Adding media querry..
+  '@media (max-width: 500px)': {
+   
+  },
+};
+const styleHeading = {
+  marginTop: '10px',
+ 
+  // Adding media querry..
+  '@media (max-width: 500px)': {
+    fontSize: '10px',
+  },
+};
+const styleHeading1 = {
+  marginTop: '0',
+ fontSize:'17px',
+ fontWeight:'bold',
+  // Adding media querry..
+  '@media (max-width: 500px)': {
+    fontSize: '10px',
+  },
+};
+
 const styles = muiBaseTheme => ({
   card: {
     backgroundColor:'rgba(0,0,0,0.0)',
@@ -30,6 +55,7 @@ const styles = muiBaseTheme => ({
     "@media (max-width: 458px)": {
       width: 130,
       margin: 0,
+      marginLeft:'10px'
     },
   },
   media: {
@@ -38,15 +64,13 @@ const styles = muiBaseTheme => ({
     borderRadius:'50%',
     "@media (max-width: 458px)": {
       width: 100,
-      margin: 0,
+      marginLeft: '10px',
     },
   },
   content: {
     textAlign: "center",
-    padding: muiBaseTheme.spacing.unit * 1,
-    "@media (max-width: 768px)": {
-      padding: muiBaseTheme.spacing.unit * 1,
-    },
+    padding:0,
+    
   },
   divider: {
     margin: `${muiBaseTheme.spacing.unit * 1}px 0`
@@ -58,7 +82,7 @@ const styles = muiBaseTheme => ({
     },
   },
   subheading: {
-    lineHeight: 1.4,
+    lineHeight: 1.1,
     "@media (max-width: 488px)": {
       lineHeight:1.2,
       fontSize:5
@@ -77,18 +101,19 @@ function CardFlex({ classes, imageUrl, title, text }) {
             imageUrl
           }
         />
-        <CardContent className={classes.content}>
+        <CardContent className={classes.content} style={style}>
           <Typography
             className={"MuiTypography--heading"}
             variant={"h6"}
             gutterBottom
-            
+           style={styleHeading1}
           >
             {title}
           </Typography>
           <Typography
             className={"MuiTypography--subheading"}
             variant={"caption"}
+            style={styleHeading}
           >
             {text}
           </Typography>

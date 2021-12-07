@@ -47,7 +47,7 @@ const NewForm = () => {
               <Adress>
                 <HiOutlineLocationMarker size="30px" color="red"/>
                 <AdressText>
-                Rareprob solutions private limited Doon Express Business Park, Subhash Nagar, Dehradun, Uttarakhand - 248001
+                Rareprob Solutions Private Limited <br/> Doon Express Business Park, Subhash Nagar, Dehradun, Uttarakhand - 248001
                 </AdressText>
               </Adress>
               <Message>
@@ -73,7 +73,7 @@ const NewForm = () => {
             <FormContainer onSubmit={submitHandler}>
             <NameInput  value={name} placeholder="NAME" onChange={(e)=>setName(e.target.value)}/>
             <EmailInput type="email" value={email} placeholder="EMAIL" onChange={(e)=>setEmail(e.target.value)}/>
-            <DetailInput value={detail} placeholder="MESSAGE" onChange={(e)=>setDetail(e.target.value)}/>
+            <DetailInput  value={detail} placeholder="MESSAGE" onChange={(e)=>setDetail(e.target.value)}/>
             {validate&&(
               <p style={{color:'red'}}>All fields are required</p>
             )}
@@ -104,7 +104,7 @@ margin-top:50px;
   align-items: center;
   justify-content: space-around;
   height: 400px;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 `
 const AddresContainer=styled.div`
@@ -116,6 +116,12 @@ align-items: baseline;
 @media(max-width:768px){
 justify-content:space-between;
 height:700px;
+margin-left: 0;
+}
+@media(max-width:568px){
+justify-content:space-between;
+height:700px;
+margin-left: -40px;
 }
 `
 const FormContainer=styled.form`
@@ -179,7 +185,7 @@ width: 350px;
   width: 250px;
 }
 `
-const DetailInput=styled.input`
+const DetailInput=styled.textarea`
 background-color: rgba(0,0,0,0.1);
 padding: 10px;
 border-radius: 2px;
