@@ -306,7 +306,7 @@ margin-top: 20px;
 
 const RareprobText=styled.h1`
 font-size:17px;
-color: rgba(0,0,0,0.9);
+color: rgba(0,0,0,0.7);
 width: 70%;
 margin: auto;
 line-height:1.8;

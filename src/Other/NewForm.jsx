@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import styled from 'styled-components'
 import {HiOutlineLocationMarker} from 'react-icons/hi'
-import {AiOutlineLink,AiFillInstagram,AiFillFacebook} from 'react-icons/ai'
+import {AiOutlineLink,AiFillInstagram,AiFillFacebook,AiFillTwitterCircle} from 'react-icons/ai'
 import {GrMail} from 'react-icons/gr'
 import { setDoc, doc } from '@firebase/firestore';
 import {firestore} from '../firebase'
@@ -57,9 +57,17 @@ const NewForm = () => {
                </AdressText>
                </Message> 
                <Follow>
-                   <AiOutlineLink size="30px" color="red"/>
-                   <AiFillInstagram size="20px" color="black" style={{marginLeft:'10px'}}/>
-                   <AiFillFacebook size="20px" color="black"/>
+                   <AiOutlineLink size="30px" color="red" style={{marginRight:5}}/>
+                  
+                   Follow Us: <a rel="noopener noreferrer" target="_blank"  href="https://www.instagram.com/rareprob_/?utm_medium=copy_link">
+                            <AiFillInstagram  size="30px" color="gray"/>
+                        </a>
+                        <a rel="noopener noreferrer" target="_blank" href=" https://mobile.twitter.com/rare_prob">
+                            <AiFillTwitterCircle size="30px" color="gray"/>
+                        </a>
+                        <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/rareprobsolution.sul.7">
+                            <AiFillFacebook size="30px" color="gray"/>
+                        </a>
                </Follow>             
             </AddresContainer>
             <FormContainer onSubmit={submitHandler}>
