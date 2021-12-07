@@ -18,17 +18,15 @@ const SideView = () => {
     }
   }, [])
 
-
   return (<>
     <Container show={show}>
       <IconContainer>
-        <Scrollspy items={['section-1', 'section-2', 'section-3']} currentClassName="is-current" offset={-50}>
+        <Scrollspy items={['section-1', 'section-2', 'section-3','section-5']}  currentClassName="is-current" offset={-50}>
           <li>
             <ActiveLink href="#section-1" >
               <Icon alt="videoplayer" src="images/icons/videoplayer.png" />
               <Title>Video Player Pro</Title>
             </ActiveLink>
-
           </li>
           <li>
             <ActiveLink href="#section-2" >
@@ -42,7 +40,7 @@ const SideView = () => {
               <Icon alt="gallery" src="images/icons/gallery.png" big={true} />
               <Title>Gallery</Title>
             </ActiveLink>
-          </li>
+          </li> 
         </Scrollspy>
         <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=mp3converter.videotomp3.ringtonemaker">
           <Icon alt="mp3 converter" src="images/icons/mp3.png" />

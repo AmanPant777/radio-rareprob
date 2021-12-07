@@ -29,7 +29,7 @@ const Header = ({ home, handleProduct, product }) => {
                 </HomeContainer>
                 <AboutContainer>
                     <a href="#about">
-                        <About >About us</About>
+                        <About >About Us</About>
                     </a>
                 </AboutContainer>
                 <ProductContainer onClick={() => handleProduct(!product)}>

@@ -5,17 +5,17 @@ import pexels from './pexels.mp4'
 const GalleryScreen = () => {
     return (
         <Container>
-       <VideoContainer>
+       <VideoContainer id="section-3" >
                    <Video  autoPlay="autoPlay" playsinline autoplay muted loop >
                       <source src={pexels} type="video/mp4"/>
                   </Video>
-                  <IconContainer>
+                  <IconContainer >
                       <Icon alt="gallery" src="images/icons/gallery.png"/>
                       <IconTitle>Gallery</IconTitle>
                   </IconContainer>
        </VideoContainer>
-       <FeatureContainer>
-           <GalleryFeature/>
+       <FeatureContainer  >
+           <GalleryFeature />
        </FeatureContainer>
         </Container>
     )

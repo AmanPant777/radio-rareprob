@@ -38,7 +38,7 @@ const Home = () => {
             <MusicContainer id="section-2">
                 <MusicScreen />
             </MusicContainer>
-            <MusicContainer id="section-3" style={{ marginTop: -20 }}>
+            <MusicContainer  style={{ marginTop: -20 }}>
                 <GalleryScreen />
             </MusicContainer>
         </Container>

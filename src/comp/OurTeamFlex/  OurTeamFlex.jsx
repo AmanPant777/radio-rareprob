@@ -24,8 +24,6 @@ const OurTeamFlex = () => {
 
                         <Text>Kajal Goyal </Text>
                         <Textbelow>Software Engineer (QA)</Textbelow>
-
-
                     </Flex1>
                     <Flex1>
                         <Image alt="swati" src='images/swatikarnwal.png' />
@@ -33,12 +31,12 @@ const OurTeamFlex = () => {
                         <Textbelow>Software Engineer (QA)</Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image alt="arun" src='images/arun.jpg' />
+                        <Image arun={true} alt="arun" src='images/arun.jpg' />
                         <Text> Arun Saini</Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image alt="rishi" src='images/rishi.jpg' />
+                        <Image rishi={true} alt="rishi" src='images/rishi.jpg' />
                         <Text>Rishikesh Sharma</Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
@@ -48,7 +46,7 @@ const OurTeamFlex = () => {
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image alt="vibhur" src='images/vibhur.jpg' />
+                        <Image vibhor={true} alt="vibhur" src='images/vibhur.jpg' />
                         <Text>Vibhor Jain </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
@@ -63,7 +61,12 @@ const OurTeamFlex = () => {
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image alt="akshay" src='images/akshay.jpg' />
+                        <Image alt="indu" src='images/indu.jpg' />
+                        <Text>Indu Sharma </Text>
+                        <Textbelow>Product Manager </Textbelow>
+                    </Flex1>
+                    <Flex1>
+                        <Image akshay={true} alt="akshay" src='images/akshay.jpg' />
                         <Text>Akshay Jain </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
@@ -85,8 +88,6 @@ const OurTeamFlex = () => {
                 </FlexContainer1>
                 <ArrowRightScroll onClick={() => scrollHandlerRight("scroll1")} />
             </ScrollContainer>
-
-
             {/* <Cara /> */}
         </Container>
     )
@@ -144,10 +145,9 @@ display: flex;
 overflow-x: scroll; 
 width: 60%;
 margin: 30px 20px;
-min-height: 300px;
+min-height: 200px;
 overflow-y: hidden;
 scroll-behavior:smooth;
-
 -ms-overflow-style: none;  
 scrollbar-width: none;  
 ::-webkit-scrollbar{
@@ -160,7 +160,7 @@ scrollbar-width: none;
     min-height: 200px;
 }
 @media(max-width:488px){
-    width: 60%;
+    width: 40%;
     min-height: 200px;
     margin: 20px 0;
 }
@@ -175,14 +175,22 @@ text-align: center;
 }
 `
 const Image = styled.img`
-height: 200px;
-width: 150px;
+height: 120px;
+width: 110px;
+border-radius: 100%;
 margin-right: 10px;
 object-fit: cover;
-border-radius: 10px;
+object-position: ${props=>props.arun&&`0 10px`};
+object-position: ${props=>props.akshay&&`0 5px`};
 @media(max-width:768px){
-   width: 100%;
-   height: 90%;
+   width: 70%;
+   height: 70%;
+   /* margin-right: -40px; */
+   object-fit: cover;
+}
+@media(max-width:478px){
+   width: 70%;
+   height: 70%;
    /* margin-right: -40px; */
    object-fit: cover;
 }
@@ -190,6 +198,7 @@ border-radius: 10px;
 `
 const Text = styled.div`
 color: black;
+font-size: 13px;
 @media(max-width:768px){
     font-size: 10px;
 }
@@ -225,9 +234,14 @@ const ArrowLeftIcon = styled(ArrowLeft)`
 cursor: pointer;
 z-index: 100;
 margin-bottom: 50px;
+@media(max-width:768px){
+    margin-bottom: 100px;
+}
 `
 const ArrowRightScroll = styled(ArrowRight)`
 cursor: pointer;
 margin-bottom: 50px;
-
+@media(max-width:768px){
+    margin-bottom: 100px;
+}
 `
