@@ -30,6 +30,8 @@ const styleHeading1 = {
   },
 };
 
+
+
 const styles = muiBaseTheme => ({
   card: {
     backgroundColor:'rgba(0,0,0,0.0)',
@@ -53,7 +55,7 @@ const styles = muiBaseTheme => ({
       width: 200
     },
     "@media (max-width: 458px)": {
-      width: 130,
+      width: 110,
       margin: 0,
       marginLeft:'10px'
     },
@@ -62,10 +64,15 @@ const styles = muiBaseTheme => ({
     paddingTop: "100.25%",
     objectFit: 'cover',
     borderRadius:'50%',
-    "@media (max-width: 458px)": {
-      width: 100,
+    "@media (max-width: 768px)": {
+      width: 150,
       marginLeft: '10px',
     },
+    "@media (max-width: 458px)": {
+      height: 50 ,
+      width: 100,
+    },
+  
   },
   content: {
     textAlign: "center",

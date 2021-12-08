@@ -155,7 +155,7 @@ margin-left: 10px;
   font-size:13px;
 }
 @media(max-width:768px){
-width: 100%;
+width: 170px;
 }
 `
 const Follow=styled.div`
@@ -214,6 +214,7 @@ transition-duration: 0.3s;
 }
 `
 const Contact=styled.h1`
-color: gray;
+color: rgba(0,0,0,0.7);
 text-align: center;
+margin-top: 80px;
 `

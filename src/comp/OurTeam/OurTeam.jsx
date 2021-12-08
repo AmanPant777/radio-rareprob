@@ -109,7 +109,7 @@ color: red;
 text-align: center;
 font-size: 50px;
 padding: 20px;
-margin-top: 30px;
+margin-top: 70px;
 margin-left: 20px;
 @media(max-width: 768px){
     font-size: 20px;
