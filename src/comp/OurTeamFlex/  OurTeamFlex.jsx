@@ -27,7 +27,7 @@ const OurTeamFlex = () => {
                     </Flex1>
                     <Flex1>
                         <Image alt="swati" src='images/swatikarnwal.png' />
-                        <Text>Swati Karnwal </Text>
+                        <Text>Swati Karanwal </Text>
                         <Textbelow>Software Engineer (QA)</Textbelow>
                     </Flex1>
                     <Flex1>
@@ -160,9 +160,12 @@ scrollbar-width: none;
     min-height: 200px;
 }
 @media(max-width:488px){
-    width: 40%;
+    width: 60%;
     min-height: 200px;
-    margin: 20px 0;
+    margin-right:0;
+    margin-left:0;
+    margin-top:0;
+    border-radius:20px;
 }
 `
 const Flex1 = styled.div`
@@ -188,9 +191,10 @@ object-position: ${props=>props.akshay&&`0 5px`};
    /* margin-right: -40px; */
    object-fit: cover;
 }
-@media(max-width:478px){
-   width: 70%;
-   height: 70%;
+@media(max-width:488px){
+    margin-top:20px;
+   width: 60%;
+   height: 60%;
    /* margin-right: -40px; */
    object-fit: cover;
 }
@@ -219,7 +223,10 @@ margin-top: 50px;
 @media(max-width:768px){
     margin-left: -30px;
 }
-
+@media(max-width:488px){
+    margin-left: 5px;
+    margin-top:30px;
+}
 `
 const Textbelow = styled.p`
 color: gray;
@@ -245,5 +252,8 @@ cursor: pointer;
 margin-bottom: 50px;
 @media(max-width:768px){
     margin-bottom: 100px;
+}
+@media(max-width:488px){
+    margin-left:10px;
 }
 `

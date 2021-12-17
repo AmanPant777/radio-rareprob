@@ -121,7 +121,7 @@ margin-top: 20px;
     font-size: 20px;
 padding: 0px;
 margin-right: 0;
-margin-top: 20px;
+margin-top: 40px;
 }
 `
 // const OurTeamText = styled.p`

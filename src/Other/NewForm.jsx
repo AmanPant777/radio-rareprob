@@ -106,6 +106,7 @@ margin-top:50px;
   height: 400px;
   margin-left: 5%;
 }
+
 `
 const AddresContainer=styled.div`
 width: 50%;
@@ -134,6 +135,10 @@ align-items: center;
   margin-top: 20px;
   justify-content:space-between;
   height: 800px;
+}
+@media(max-width:488px){
+  margin-top:50px;
+  margin-left:60px;
 }
 `
 const Adress=styled.div`
@@ -217,4 +222,7 @@ const Contact=styled.h1`
 color: rgba(0,0,0,0.7);
 text-align: center;
 margin-top: 80px;
+@media(max-width:488px){
+  font-size:25px;
+}
 `

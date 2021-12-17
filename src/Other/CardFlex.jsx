@@ -38,6 +38,7 @@ const styles = muiBaseTheme => ({
     margin: 20,
     maxWidth:220,
     width: 220,
+    marginTop:20,
     borderRadius:20 ,
     transition: "0.3s",
     boxShadow: "0 8px 40px -12px rgba(0,0,0,0.06)",
@@ -57,6 +58,7 @@ const styles = muiBaseTheme => ({
     "@media (max-width: 458px)": {
       width: 110,
       margin: 0,
+      marginTop:20,
       marginLeft:'10px'
     },
   },
