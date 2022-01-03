@@ -105,42 +105,7 @@ margin-top: 20px;
    margin-left: 10px;
 }
  `
-// const GridContainer1 = styled.div`
-// display: grid;
-// grid-template-columns: repeat(2,minmax(0,1fr));
-//  `
-// const Grid1 = styled.div` 
-// width: 90%;
-// margin: auto;
-// @media(max-width:768px){
-//     width: 100%;
-// }
-// `
-// const Image1 = styled.img`
-// width: 100%;
-// height: 400px;
-// @media(max-width:1200px){
-//     width: 200px;
-//     height: 300px;
-// }
-// @media(max-width:768px){
-//     width: 100%;
-//     height: 300px;
-// }
-// @media(max-width:468px){
-//     width: 100%;
-//     height: 150px;
-// }
-// object-fit: cover;
-// `
-// const Text1 = styled.p`
-// color: red;
-// font-weight: bold;
-// font-size: 16px;
-// @media(max-width:768px){
-//     font-size: 13px;
-// }
-// `
+
 const FlexContainer1 = styled.div`
 display: flex;
 overflow-x: scroll; 
@@ -181,6 +146,7 @@ text-align: center;
 const Image = styled(LazyLoadImage)`
 height: 120px;
 width: 110px;
+max-height: 120px;
 border-radius: 100%;
 margin-right: 10px;
 object-fit: cover;
@@ -189,15 +155,11 @@ object-position: ${props=>props.akshay&&`0 5px`};
 @media(max-width:768px){
    width: 70%;
    height: 70%;
-   /* margin-right: -40px; */
-   object-fit: cover;
 }
 @media(max-width:488px){
     margin-top:20px;
    width: 60%;
    height: 60%;
-   /* margin-right: -40px; */
-   object-fit: cover;
 }
 
 `
