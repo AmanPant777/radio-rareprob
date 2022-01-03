@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 import GridFeatures from './GridFeatures'
 const VideoFeature = () => {
     return (
@@ -8,7 +9,7 @@ const VideoFeature = () => {
                 <FeatureTitle>Multi-featured App</FeatureTitle>
                 <FeatureText>Music, Photos, Videos and Online Trending videos are accessible.</FeatureText>
                 <ImageContainer>
-                    <Image alt="All Features" src="images/picture.png" />
+                    <Image effect='blur' alt="All Features" src="images/picture.png" />
                     {/* <FeatureImage src='/images/mobile1.png' middle={true}/>
                  <FeatureImage src="/images/mobile2.png" right={true}/>
                  <FeatureImage src="/images/mobile3.png" left={true}/> */}
@@ -61,27 +62,7 @@ color: rgba(0,0,0,0.9);
     padding-top: 5px;
 }
 `
-// const FeatureImage=styled.img`
-// margin-top:20px;
-// position:absolute;
-// width: 200px;
-// left:${props=>props.left&&'4%'};
-// z-index:${props=>props.middle&&'10'};
-// right:${props=>props.right&&'4%'};
-// object-fit:contain;
-// height: ${props=>props.middle&&` 450px`};
-// left:${props=>props.middle&&'33%'};
-// top:${props=>props.left?'80px':props.right?'80px':'45px'};
-// @media(max-width: 768px){
-//     width:50%;
-//     right:${props=>props.right&&'0'};
-//     left:${props=>props.left&&'0'};
-//     margin-top: 0;
-//     top:${props=>props.middle&&' -40px'};
-// right:${props=>props.right&&'-15%'};
-// width: ${props=>props.middle&&` 110px`};
-// }
-// `
+
 const ImageContainer = styled.div`
 position: relative;
 width:60%;
@@ -91,10 +72,11 @@ margin: auto;
     margin-left: 10%;
 }
 `
-const Image = styled.img`
+const Image = styled(LazyLoadImage)`
 object-fit: contain;
 width: 90%;
 margin-top: 40px;
+
 @media(max-width:1200px){
   margin-top: 20px;
   width:85% ;

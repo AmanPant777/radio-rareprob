@@ -7,6 +7,7 @@ import MusicScreen from '../screens/MusicScreen'
 import VideoScreen from '../screens/VideoScreen'
 import GalleryScreen from '../screens/GalleryScreen'
 import Footer from './Footer'
+
 const Home = () => {
     const [product, setProduct] = useState(true)
     const home = "home"

@@ -2,6 +2,7 @@ import { ArrowLeft, ArrowRight } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
 import { WrappedApp } from '../../Other/CardFlex'
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 
 const OurTeamFlex = () => {
     const scrollHandlerLeft = (scroll) => {
@@ -20,68 +21,68 @@ const OurTeamFlex = () => {
                 <ArrowLeftIcon onClick={() => scrollHandlerLeft("scroll1")} />
                 <FlexContainer1 id="scroll1">
                     <Flex1>
-                        <Image alt="kajal" src='images/kajal.jpg' />
+                        <Image effect='blur' alt="kajal" src='images/kajal.jpg' />
 
                         <Text>Kajal Goyal </Text>
                         <Textbelow>Software Engineer (QA)</Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image alt="swati" src='images/swatikarnwal.png' />
+                        <Image effect='blur' alt="swati" src='images/swatikarnwal.png' />
                         <Text>Swati Karanwal </Text>
                         <Textbelow>Software Engineer (QA)</Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image arun={true} alt="arun" src='images/arun.jpg' />
+                        <Image effect='blur' arun={true} alt="arun" src='images/arun.jpg' />
                         <Text> Arun Saini</Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image rishi={true} alt="rishi" src='images/rishi.jpg' />
+                        <Image effect='blur' rishi={true} alt="rishi" src='images/rishi.jpg' />
                         <Text>Rishikesh Sharma</Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image alt="aman" src='images/aman.jpg' />
+                        <Image effect='blur' alt="aman" src='images/aman.jpg' />
                         <Text>Aman Pant </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image vibhor={true} alt="vibhur" src='images/vibhur.jpg' />
+                        <Image effect='blur' vibhor={true} alt="vibhur" src='images/vibhur.jpg' />
                         <Text>Vibhor Jain </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image alt="robin" src='images/robin.jpg' />
+                        <Image effect='blur' alt="robin" src='images/robin.jpg' />
                         <Text>Robin Sharma </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image alt="nikhil" src='images/nikhilrana.png' />
+                        <Image effect='blur' alt="nikhil" src='images/nikhilrana.png' />
                         <Text>Nikhil Rana </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image alt="indu" src='images/indu.jpg' />
+                        <Image effect='blur' alt="indu" src='images/indu.jpg' />
                         <Text>Indu Sharma </Text>
                         <Textbelow>Product Manager </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image akshay={true} alt="akshay" src='images/akshay.jpg' />
+                        <Image effect='blur' akshay={true} alt="akshay" src='images/akshay.jpg' />
                         <Text>Akshay Jain </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image alt="mansi" src='images/mansi.png' />
+                        <Image effect='blur'  alt="mansi" src='images/mansi.png' />
                         <Text>Mansi </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image alt="sanidhya" src='images/sanidhyasingh.png' />
+                        <Image effect='blur' alt="sanidhya" src='images/sanidhyasingh.png' />
                         <Text>Sanidhya Singh </Text>
                         <Textbelow>Software Engineer </Textbelow>
                     </Flex1>
                     <Flex1>
-                        <Image alt="rajdeep" src='images/rajdeepnahar.png' />
+                        <Image effect='blur' alt="rajdeep" src='images/rajdeepnahar.png' />
                         <Text>Rajdeep Nahar </Text>
                         <Textbelow> Graphic Designer </Textbelow>
                     </Flex1>
@@ -177,7 +178,7 @@ text-align: center;
    min-width: 120px;
 }
 `
-const Image = styled.img`
+const Image = styled(LazyLoadImage)`
 height: 120px;
 width: 110px;
 border-radius: 100%;

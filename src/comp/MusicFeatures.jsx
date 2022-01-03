@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {LazyLoadImage} from "react-lazy-load-image-component"
 const MusicFeatures = () => {
     return (
         <Container>
@@ -8,7 +9,8 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title>Equalizer</Title>
                     <ImageContainer>
-                        <Image alt="equalizer" src='images/Equalizerimage.jpg' />
+                        <Image 
+                        effect='blur' alt="equalizer" src='images/Equalizerimage.jpg' />
                         <Icon alt="equalizer" src='images/equalizer.png' />
                     </ImageContainer>
                     <Text >Not every person has the same sound quality taste. right?
@@ -17,7 +19,7 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title>Discover</Title>
                     <ImageContainer>
-                        <Image alt="discover" src='images/Discoverimage.jpg' />
+                        <Image effect='blur' alt="discover" src='images/Discoverimage.jpg' />
                         <Icon alt="discover" src='images/disc.png' discover={true} />
 
                     </ImageContainer>
@@ -28,7 +30,7 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title>Themes</Title>
                     <ImageContainer>
-                        <Image alt="themes" src='images/themesmenia.jpg' />
+                        <Image effect='blur' alt="themes" src='images/themesmenia.jpg' />
                         <Icon alt="themes" src='images/ICONtheme.png' />
                     </ImageContainer>
                     <Text>Somewhere we all seek variation. isn't it?
@@ -37,7 +39,7 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title one={true}>Video to mp3 converter</Title>
                     <ImageContainer>
-                        <Image alt="video to mp3" src='images/videotomp3.jpg' />
+                        <Image effect='blur' alt="video to mp3" src='images/videotomp3.jpg' />
                         <Icon alt="video to mp3" src='images/ICONvideotomp3.png' />
                     </ImageContainer>
                     <Text>We believe, Not everyone prefers to watch videos while listening to songs.
@@ -47,7 +49,7 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title>Sleep Timer</Title>
                     <ImageContainer>
-                        <Image alt="sleep timer" src='images/SleepTimer.jpg' />
+                        <Image effect='blur' alt="sleep timer" src='images/SleepTimer.jpg' />
                         <Icon alt="sleep timer" src='images/ICONsleep time.png' />
                     </ImageContainer>
                     <Text> Listening to music after a tiring day is indeed a relaxing thing.
@@ -57,7 +59,7 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title>Playlists</Title>
                     <ImageContainer>
-                        <Image alt="playlist" src='images/Playlist.jpg' />
+                        <Image effect='blur' alt="playlist" src='images/Playlist.jpg' />
                         <Icon alt="playlist" src='images/ICONplaylist.png' />
                     </ImageContainer>
                     <Text>Creating a playlist of favorite songs is fascinating.
@@ -66,7 +68,7 @@ const MusicFeatures = () => {
                 <Grid>
                     <Title>Ringtone</Title>
                     <ImageContainer>
-                        <Image alt="Ringtone" src='images/ringtonimage.jpg' />
+                        <Image effect='blur' alt="Ringtone" src='images/ringtonimage.jpg' />
                         <Icon alt="Ringtone" src='images/ringtone.png' />
                     </ImageContainer>
                     <Text>Want to make your favorite song as a ringtone?
@@ -92,10 +94,13 @@ grid-template-columns: repeat(4,minmax(0,1fr));
 width:100%;
 margin-top: -20px;
 height:100%;
+@media (max-width: 1268px) {
+grid-template-columns: repeat(3,minmax(0,1fr));
+margin-top: 0px;
+}
 @media (max-width: 768px) {
 grid-template-columns: repeat(3,minmax(0,1fr));
 margin-top: 0px;
-
 }
 @media (max-width: 488px) {
 grid-template-columns: repeat(2,minmax(0,1fr));
@@ -137,26 +142,33 @@ font-size: 20px;
 }
 `
 
-const Image = styled.img`
+const Image = styled(LazyLoadImage)`
 width: 90%;
-height: 95%;
+height: 420px;
+width: 250px;
+min-width: 200px;
 object-fit: cover;
 margin-top:20px;
 border-radius: 20px;
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 transition: transform .2s;
 &:hover{transform: scale(1.1)}; 
+@media(max-width:1400px){
+    width: 230px;
+}
 @media(max-width: 768px){
     width: 70%;
     height: 160px;
 border-radius: 4px;
 margin-left: 5%;
+min-width: 150px;
 }
 @media(max-width: 555px){
     /* width: 80%; */
     min-width: 120px;
     max-width: 200px;
     height: 130px;
+    width: 140px;
     margin-left: 5%;
     margin-top: 15px;
    border-radius: 4px;

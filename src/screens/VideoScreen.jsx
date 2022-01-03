@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 import VideoFeature from '../comp/VideoFeature/VideoFeature'
 const VideoScreen = () => {
     return (
@@ -17,7 +18,9 @@ const VideoScreen = () => {
                 <HeadingContainer two={true}>
                 <KeyGrayTitle>Smooth Gesture</KeyGrayTitle>
                 <Text>Gesture control for Volume, Brightness, Playback speed and Forward</Text>
-                <Image1 alt="features" src="images/kids.png"/>
+                <Image1 alt="features" 
+                effect='blur'
+                src="images/kids.png"/>
                 </HeadingContainer>
             </AboveContainer>
             {/* <Video autoPlay="autoPlay" playsinline autoplay muted loop >
@@ -27,12 +30,16 @@ const VideoScreen = () => {
                 <PictureContainer>
                     <PictureTitle>Picture-in-picture mode</PictureTitle>
                     <PictureText>View video in pip mode without block screen.</PictureText>
-                    <PictureImage alt="pip" src='/images/pop.png' one={true}/>
+                    <PictureImage alt="pip" 
+                    effect='blur'
+                    src='/images/pop.png' one={true}/>
                 </PictureContainer>
                 <PictureContainer>
                     <PictureTitle>Online Videos</PictureTitle>
                     <PictureText>Search and play online trending videos with category like music, sports, news, comedy, technology and many more</PictureText>
-                    <PictureImage alt="pip" src='/images/online.png' />
+                    <PictureImage 
+                    effect='blur'
+                    alt="pip" src='/images/online.png' />
                 </PictureContainer>
             </PictureInPictureContainer>
             <VideoFeatureContainer>
@@ -182,6 +189,9 @@ justify-content:space-between;
 const PictureContainer = styled.div`
 width: 45%;
 padding: 20px; 
+display: flex;
+flex-direction: column;
+justify-content: center;
 @media(max-width: 768px){
     padding:0;
     width:50%;
@@ -211,7 +221,7 @@ text-align: center;
 }
 
 `
-const PictureImage = styled.img`
+const PictureImage = styled(LazyLoadImage)`
 width: 100%;
 height: 450px;
 object-fit:contain;
@@ -257,7 +267,7 @@ align-items: center;
 justify-content: center;
 margin-top: ${props=>props.two&&`40px`};
 `
-const Image1=styled.img`
+const Image1=styled(LazyLoadImage)`
 max-width: 550px;
 object-fit: contain;
 @media(max-width:788px){

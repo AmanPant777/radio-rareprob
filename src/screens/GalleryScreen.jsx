@@ -2,13 +2,18 @@ import React from 'react'
 import styled from'styled-components'
 import GalleryFeature from '../comp/GalleryFeature/GalleryFeature'
 import pexels from './pexels.mp4'
+import { LazyLoadComponent } from 'react-lazy-load-image-component'
+
 const GalleryScreen = () => {
     return (
         <Container>
        <VideoContainer id="section-3" >
-                   <Video  autoPlay="autoPlay" playsinline autoplay muted loop >
+           <LazyLoadComponent >
+              <Video  autoPlay="autoPlay" playsinline autoplay muted loop >
                       <source src={pexels} type="video/mp4"/>
                   </Video>
+           </LazyLoadComponent>
+                   
                   <IconContainer >
                       <Icon alt="gallery" src="images/icons/gallery.png"/>
                       <IconTitle>Gallery</IconTitle>
