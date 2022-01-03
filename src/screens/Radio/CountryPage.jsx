@@ -1,14 +1,11 @@
 import React, { useState,useEffect } from 'react'
 import styled from 'styled-components'
 import Header from '../../RadioComp/Header'
-// import CountryStation from '../Other/CountryStation'
 import axios from 'axios'
 import {  useSelector ,useDispatch} from 'react-redux'
 import {  recentPlaying, removeSidebar, switchPlaylist } from '../../redux/RecentSlice'
-// import Sidebar from '../comp/Sidebar'
 import { playStation, stationAdd } from '../../redux/PlayingSlice'
 import { addallstation } from '../../redux/AllSlice'
-// import AllAudioPlayer from '../audio/allAudioPlayer'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import {BsPlayCircle} from 'react-icons/bs'
@@ -22,12 +19,9 @@ const CountryPage = () => {
     const [AllStation,setAllStations]=useState()
     const dispatch=useDispatch()
     const user=useSelector(state=>state.user.users)
-    // const country=useParams()
     const sidebar=useSelector(state=>state.user.sidebar)
     const playing=useSelector(state=>state.user.playing)
-    // const number=Math.floor(Math.random( )*3+1)
-    // const station=useSelector(state=>state.playing.stationUrl)
-    // const audioType=station.slice(station.length-3,station.length)
+    
    
     const queryParams = new URLSearchParams(window.location.search);
     const id = queryParams.get('country');

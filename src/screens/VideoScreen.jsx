@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import {LazyLoadImage} from 'react-lazy-load-image-component'
 import VideoFeature from '../comp/VideoFeature/VideoFeature'
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const VideoScreen = () => {
     return (
         <Container >

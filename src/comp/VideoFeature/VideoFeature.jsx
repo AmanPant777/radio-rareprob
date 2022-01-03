@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import {LazyLoadImage} from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 import GridFeatures from './GridFeatures'
 const VideoFeature = () => {
     return (
@@ -10,9 +12,6 @@ const VideoFeature = () => {
                 <FeatureText>Music, Photos, Videos and Online Trending videos are accessible.</FeatureText>
                 <ImageContainer>
                     <Image effect='blur' alt="All Features" src="images/picture.png" />
-                    {/* <FeatureImage src='/images/mobile1.png' middle={true}/>
-                 <FeatureImage src="/images/mobile2.png" right={true}/>
-                 <FeatureImage src="/images/mobile3.png" left={true}/> */}
                 </ImageContainer>
             </FeatureContainer>
             <GridFeatures />

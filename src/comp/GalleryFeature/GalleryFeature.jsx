@@ -4,6 +4,7 @@ import OurTeam from '../OurTeam/OurTeam'
 import Zoom from 'react-reveal/Zoom'
 import KeyFeatures from '../../Other/KeyFeatures'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const GalleryFeature = () => {
     return (

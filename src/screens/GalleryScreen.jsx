@@ -3,6 +3,7 @@ import styled from'styled-components'
 import GalleryFeature from '../comp/GalleryFeature/GalleryFeature'
 import pexels from './pexels.mp4'
 import { LazyLoadComponent } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const GalleryScreen = () => {
     return (
