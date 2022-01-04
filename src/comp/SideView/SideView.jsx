@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Scrollspy from 'react-scrollspy'
+import { Link } from 'react-router-dom'
 const SideView = () => {
 
   const [show, setShow] = useState(true)
@@ -55,10 +56,15 @@ const SideView = () => {
           <Icon alt="video download" src="images/icons/insta_new_icon.png" />
           <Title>Video Downloader</Title>
         </ActiveLink>
-        <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=radio.fm.mytunner.gaana.liveradio.radiostation.pocketfm">
-          <Icon alt="radio fm" src="images/icons/radio.png" />
-          <Title>Radio Fm</Title>
-        </ActiveLink>
+        
+        <ActiveLink href='/radio-monkey'>
+            <Icon alt="radio fm" src="images/icons/radio.png" />
+             <Title>Radio Fm</Title> 
+        </ActiveLink> 
+        
+          
+         
+      
         <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=com.asddev.statussaver">
           <Icon alt="status saver" src="images/icons/status_saver.png" />
           <Title>Status Saver</Title>
@@ -84,48 +90,24 @@ const Container = styled.div`
 color: black;
 height:80vh;
 border-radius: 40px 0 0 40px;
-margin-top:70px;
+margin-top:80px;
 scroll-behavior:smooth;
 overflow-y: scroll;
 -ms-overflow-style: none;  
 scrollbar-width: none;  
 background-color: ${props => props.show ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.2)'};
 width: 100%;
-/* ::-webkit-scrollbar{
-  width: 6px;
-
-	background-color: #c79a9c;
-}
-::-webkit-scrollbar-thumb
-{
-	background-color: #a56b6b;
-  height: 10px;
-} */
-
-
 ::-webkit-scrollbar{
   width: 0;
 }
-/* ::-webkit-scrollbar-track{
-    background-color: rgba(236, 226, 226,0.3);
-    border-radius: 5px;
-}
-::-webkit-scrollbar-thumb{
-    background: linear-gradient(transparent, #be4343);
-    border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(transparent, #e00e0e);
-} */
-
 @media(max-width: 768px){
-  margin-top: 100%;
+  margin-top: 20%;
 }
 @media(min-height:700px){
-margin-top:90px;
+margin-top:70px;
 }
 @media(max-width:488px){
-margin-top:60px;
+margin-top:50px;
 border-radius: 20px 0 0 20px;
 
 }

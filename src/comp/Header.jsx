@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 const Header = ({ home, handleProduct, product }) => {
     const [show, setShow] = useState(true)
@@ -28,18 +29,13 @@ const Header = ({ home, handleProduct, product }) => {
                     </a>
                 </HomeContainer>
                 <AboutContainer>
-                    <a href="#about">
+                <a href="#about">
                         <About >About Us</About>
                     </a>
                 </AboutContainer>
                 <ProductContainer onClick={() => handleProduct(!product)}>
                     <Product>Apps</Product>
                 </ProductContainer>
-                {/* <IconContainer >
-                <Icon one={true}></Icon>
-                <Icon two={true}></Icon>
-                <Icon three={true}></Icon>
-            </IconContainer> */}
             </ContainerTitle>
         </Container>
     )

@@ -13,7 +13,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path="*" element={<h1>Error Page</h1>}/>
         <Route path='/radio-monkey/radiostation' element={<CountryPage/>}/>
-        <Route path="/radio-monkey" caseSensitive={true} element={<RadioMonkey />}/>
+        <Route path="/radio-monkey"  element={<RadioMonkey />}/>
         <Route path="/radio-monkey/station" element={<StationScreen/>}/>
       </Routes>
     </BrowserRouter>
