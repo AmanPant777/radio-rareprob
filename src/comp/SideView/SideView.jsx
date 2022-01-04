@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Scrollspy from 'react-scrollspy'
-import { Link } from 'react-router-dom'
 const SideView = () => {
 
   const [show, setShow] = useState(true)

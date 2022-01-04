@@ -7,7 +7,6 @@ import StationScreen from './RadioComp/AllStation/StationScreen';
 
 function App() {
   return (
-    
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -17,7 +16,6 @@ function App() {
         <Route path="/radio-monkey/station" element={<StationScreen/>}/>
       </Routes>
     </BrowserRouter>
-    
   );
 }
 
