@@ -60,10 +60,6 @@ const SideView = () => {
             <Icon alt="radio fm" src="images/icons/radio.png" />
              <Title>Radio Fm</Title> 
         </ActiveLink> 
-        
-          
-         
-      
         <ActiveLink target="_blank" href="https://play.google.com/store/apps/details?id=com.asddev.statussaver">
           <Icon alt="status saver" src="images/icons/status_saver.png" />
           <Title>Status Saver</Title>
